@@ -10,6 +10,7 @@ renders them as (1) a series of heat-map charts and (2) an interactive flow map.
 |------|------------|
 | `extract_dtm_ethiopia.ps1` | Reproducible extraction + processing (PowerShell). Re-run to refresh all data. |
 | `build_admin2_centroids.ps1` | One-time helper: downloads OCHA COD-AB Admin2 boundaries and computes zone centroids (needed for the site-level map). |
+| `build_refugee_sites.ps1` | Builds the UNHCR refugee-site reference layer from the UNHCR CSV → `data/eth_refugee_sites.js`. |
 | `eth_od_heatmaps.html` | **Heat maps** — one origin→destination matrix per year (2020–2024). Open in a browser. |
 | `eth_flow_map.html` | **Interactive flow map (Admin1)** — curved arrows region→region, sized by IDP volume. |
 | `eth_flow_map_sites.html` | **Interactive flow map (site / Admin2 level)** — arrows from origin region → host zone, with origin filter + min-flow slider. |
@@ -26,6 +27,8 @@ renders them as (1) a series of heat-map charts and (2) an interactive flow map.
 ```powershell
 # 1. one-time: build Admin2 zone centroids (needed for the site-level flow map)
 powershell -ExecutionPolicy Bypass -File build_admin2_centroids.ps1
+#    and the UNHCR refugee-site reference layer (needs the UNHCR CSV in this folder)
+powershell -ExecutionPolicy Bypass -File build_refugee_sites.ps1
 
 # 2. (re)extract + process — needs DTM_Primary_Key.txt in this folder
 powershell -ExecutionPolicy Bypass -File extract_dtm_ethiopia.ps1
@@ -99,6 +102,16 @@ the finest unit the DTM public API exposes. Note:
   `ET0105` "Western" (Western Tigray → placed manually).
 - Individual **physical sites/camps with point coordinates are NOT available** —
   DTM publishes only non-sensitive aggregates (admin0/1/2) via the API.
+
+### UNHCR refugee-site reference layer
+
+The site map has an optional layer (checkbox, off by default) plotting **UNHCR
+Verified Refugee Sites** in Ethiopia (15 points) as green triangles. These are
+**refugee** camps — people who fled *into* Ethiopia from other countries — a
+**different population** from the internally displaced people (IDPs) in the flow
+data, shown only as reference point locations (the source has no population
+figures). Built by `build_refugee_sites.ps1` from the UNHCR CSV in the project
+root.
 
 ## Caveats
 
