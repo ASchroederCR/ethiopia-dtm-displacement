@@ -1,0 +1,3683 @@
+﻿{
+    "meta":  {
+                 "country":  "Ethiopia",
+                 "source":  "IOM DTM API v3 (displacement/admin2)",
+                 "operation":  "Countrywide monitoring",
+                 "method":  "Year-end snapshot (latest reporting round per year); Admin1 origin -\u003e Admin1 current location; metric = present IDP individuals",
+                 "generated":  "2026-07-08",
+                 "years":  [
+                               2020,
+                               2021,
+                               2022,
+                               2023,
+                               2024
+                           ]
+             },
+    "yearMeta":  [
+                     {
+                         "year":  2020,
+                         "round":  "23",
+                         "snapshotDate":  "2020-09-30",
+                         "totalIdp":  1846551,
+                         "idpUnknownOrigin":  107769,
+                         "sites":  140
+                     },
+                     {
+                         "year":  2021,
+                         "round":  "27",
+                         "snapshotDate":  "2021-09-30",
+                         "totalIdp":  2124983,
+                         "idpUnknownOrigin":  177444,
+                         "sites":  136
+                     },
+                     {
+                         "year":  2022,
+                         "round":  "31",
+                         "snapshotDate":  "2022-09-30",
+                         "totalIdp":  2727733,
+                         "idpUnknownOrigin":  167650,
+                         "sites":  169
+                     },
+                     {
+                         "year":  2023,
+                         "round":  "35",
+                         "snapshotDate":  "2023-12-31",
+                         "totalIdp":  3194413,
+                         "idpUnknownOrigin":  848,
+                         "sites":  234
+                     },
+                     {
+                         "year":  2024,
+                         "round":  "37",
+                         "snapshotDate":  "2024-08-31",
+                         "totalIdp":  1919993,
+                         "idpUnknownOrigin":  13181,
+                         "sites":  154
+                     }
+                 ],
+    "admin1":  {
+                   "Dire Dawa":  {
+                                     "lat":  9.6,
+                                     "lon":  41.87
+                                 },
+                   "Amhara":  {
+                                  "lat":  11.5,
+                                  "lon":  38.2
+                              },
+                   "Benishangul-Gumuz":  {
+                                             "lat":  10.6,
+                                             "lon":  35.3
+                                         },
+                   "Somali":  {
+                                  "lat":  6.8,
+                                  "lon":  44.3
+                              },
+                   "South West Ethiopia":  {
+                                               "lat":  7.05,
+                                               "lon":  35.65
+                                           },
+                   "Contested":  {
+                                     "lat":  13.6,
+                                     "lon":  36.8
+                                 },
+                   "Central Ethiopia":  {
+                                            "lat":  7.7,
+                                            "lon":  37.95
+                                        },
+                   "South Ethiopia":  {
+                                          "lat":  5.8,
+                                          "lon":  37.1
+                                      },
+                   "Gambela":  {
+                                   "lat":  8.05,
+                                   "lon":  34.45
+                               },
+                   "Harari":  {
+                                  "lat":  9.31,
+                                  "lon":  42.12
+                              },
+                   "Tigray":  {
+                                  "lat":  13.6,
+                                  "lon":  39.3
+                              },
+                   "Oromia":  {
+                                  "lat":  8,
+                                  "lon":  39.3
+                              },
+                   "Afar":  {
+                                "lat":  11.75,
+                                "lon":  40.95
+                            },
+                   "Addis Ababa":  {
+                                       "lat":  9.03,
+                                       "lon":  38.74
+                                   },
+                   "Sidama":  {
+                                  "lat":  6.9,
+                                  "lon":  38.48
+                              }
+               },
+    "admin2":  {
+                   "ET0714":  {
+                                  "lat":  7.4289,
+                                  "lon":  38.2209,
+                                  "name":  "Halaba",
+                                  "a1":  "Central Ethiopia"
+                              },
+                   "ET1600":  {
+                                  "lat":  6.7285,
+                                  "lon":  38.5285,
+                                  "name":  "Sidama",
+                                  "a1":  "Sidama"
+                              },
+                   "ET1401":  {
+                                  "lat":  8.9805,
+                                  "lon":  38.7855,
+                                  "name":  "Region 14",
+                                  "a1":  "Addis Ababa"
+                              },
+                   "ET0700":  {
+                                  "lat":  8.3223,
+                                  "lon":  37.9087,
+                                  "name":  "Kebena Special",
+                                  "a1":  "Central Ethiopia"
+                              },
+                   "ET1602":  {
+                                  "lat":  6.9543,
+                                  "lon":  38.4407,
+                                  "name":  "Northern",
+                                  "a1":  "Sidama"
+                              },
+                   "ET0407":  {
+                                  "lat":  8.5016,
+                                  "lon":  39.1569,
+                                  "name":  "East Shewa",
+                                  "a1":  "Oromia"
+                              },
+                   "ET0801":  {
+                                  "lat":  6.8626,
+                                  "lon":  37.7237,
+                                  "name":  "Wolayita",
+                                  "a1":  "South Ethiopia"
+                              },
+                   "ET0312":  {
+                                  "lat":  12.5453,
+                                  "lon":  36.1740,
+                                  "name":  "West Gondar",
+                                  "a1":  "Amhara"
+                              },
+                   "ET0417":  {
+                                  "lat":  7.0587,
+                                  "lon":  38.9801,
+                                  "name":  "West Arsi",
+                                  "a1":  "Oromia"
+                              },
+                   "ET0310":  {
+                                  "lat":  10.7411,
+                                  "lon":  40.0107,
+                                  "name":  "Oromo Nationality Administration",
+                                  "a1":  "Amhara"
+                              },
+                   "ET0725":  {
+                                  "lat":  7.9947,
+                                  "lon":  38.5325,
+                                  "name":  "Mareko Special",
+                                  "a1":  "Central Ethiopia"
+                              },
+                   "ET0701":  {
+                                  "lat":  8.1325,
+                                  "lon":  37.9016,
+                                  "name":  "Guraghe",
+                                  "a1":  "Central Ethiopia"
+                              },
+                   "ET0704":  {
+                                  "lat":  8.2307,
+                                  "lon":  38.4931,
+                                  "name":  "East Guraghe",
+                                  "a1":  "Central Ethiopia"
+                              },
+                   "ET0726":  {
+                                  "lat":  7.2727,
+                                  "lon":  37.4896,
+                                  "name":  "Tembaro Special",
+                                  "a1":  "Central Ethiopia"
+                              },
+                   "ET0305":  {
+                                  "lat":  9.8034,
+                                  "lon":  39.4871,
+                                  "name":  "North Shewa (AM)",
+                                  "a1":  "Amhara"
+                              },
+                   "ET0410":  {
+                                  "lat":  8.8444,
+                                  "lon":  42.0028,
+                                  "name":  "East Hararge",
+                                  "a1":  "Oromia"
+                              },
+                   "ET0419":  {
+                                  "lat":  9.7098,
+                                  "lon":  37.1972,
+                                  "name":  "Horo Gudru Wellega",
+                                  "a1":  "Oromia"
+                              },
+                   "ET0206":  {
+                                  "lat":  10.8799,
+                                  "lon":  40.9464,
+                                  "name":  "Mahi /Zone 6",
+                                  "a1":  "Afar"
+                              },
+                   "ET0401":  {
+                                  "lat":  9.3344,
+                                  "lon":  35.3022,
+                                  "name":  "West Wellega",
+                                  "a1":  "Oromia"
+                              },
+                   "ET0203":  {
+                                  "lat":  9.6585,
+                                  "lon":  40.3955,
+                                  "name":  "Gabi /Zone 3",
+                                  "a1":  "Afar"
+                              },
+                   "ET0402":  {
+                                  "lat":  9.4048,
+                                  "lon":  36.6168,
+                                  "name":  "East Wellega",
+                                  "a1":  "Oromia"
+                              },
+                   "ET0101":  {
+                                  "lat":  14.2346,
+                                  "lon":  38.0160,
+                                  "name":  "North Western",
+                                  "a1":  "Tigray"
+                              },
+                   "ET9902":  {
+                                  "lat":  13.6300,
+                                  "lon":  38.1623,
+                                  "name":  "Area 2",
+                                  "a1":  "Contested"
+                              },
+                   "ET0408":  {
+                                  "lat":  7.9372,
+                                  "lon":  39.6820,
+                                  "name":  "Arsi",
+                                  "a1":  "Oromia"
+                              },
+                   "ET0306":  {
+                                  "lat":  10.5060,
+                                  "lon":  37.9312,
+                                  "name":  "East Gojam",
+                                  "a1":  "Amhara"
+                              },
+                   "ET1201":  {
+                                  "lat":  8.1562,
+                                  "lon":  33.4509,
+                                  "name":  "Nuwer",
+                                  "a1":  "Gambela"
+                              },
+                   "ET0205":  {
+                                  "lat":  10.4134,
+                                  "lon":  40.2685,
+                                  "name":  "Hari /Zone 5",
+                                  "a1":  "Afar"
+                              },
+                   "ET1105":  {
+                                  "lat":  6.1458,
+                                  "lon":  35.5539,
+                                  "name":  "West Omo",
+                                  "a1":  "South West Ethiopia"
+                              },
+                   "ET1103":  {
+                                  "lat":  6.9282,
+                                  "lon":  35.3632,
+                                  "name":  "Bench Sheko",
+                                  "a1":  "South West Ethiopia"
+                              },
+                   "ET0505":  {
+                                  "lat":  6.4468,
+                                  "lon":  44.6448,
+                                  "name":  "Korahe",
+                                  "a1":  "Somali"
+                              },
+                   "ET1106":  {
+                                  "lat":  6.8711,
+                                  "lon":  36.6087,
+                                  "name":  "Konta",
+                                  "a1":  "South West Ethiopia"
+                              },
+                   "ET0508":  {
+                                  "lat":  5.3217,
+                                  "lon":  42.2981,
+                                  "name":  "Afder",
+                                  "a1":  "Somali"
+                              },
+                   "ET0604":  {
+                                  "lat":  9.9190,
+                                  "lon":  35.7980,
+                                  "name":  "Kamashi",
+                                  "a1":  "Benishangul-Gumuz"
+                              },
+                   "ET0405":  {
+                                  "lat":  9.1708,
+                                  "lon":  37.8420,
+                                  "name":  "West Shewa",
+                                  "a1":  "Oromia"
+                              },
+                   "ET0314":  {
+                                  "lat":  11.7946,
+                                  "lon":  37.3440,
+                                  "name":  "Bahir Dar town Admin",
+                                  "a1":  "Amhara"
+                              },
+                   "ET0311":  {
+                                  "lat":  12.5943,
+                                  "lon":  37.3287,
+                                  "name":  "Central Gondar",
+                                  "a1":  "Amhara"
+                              },
+                   "ET0803":  {
+                                  "lat":  6.3680,
+                                  "lon":  36.8579,
+                                  "name":  "Gofa",
+                                  "a1":  "South Ethiopia"
+                              },
+                   "ET0605":  {
+                                  "lat":  9.3562,
+                                  "lon":  34.2856,
+                                  "name":  "Mao-komo Special",
+                                  "a1":  "Benishangul-Gumuz"
+                              },
+                   "ET0105":  {
+                                  "lat":  13.7,
+                                  "lon":  36.75,
+                                  "name":  "Western",
+                                  "a1":  "Tigray"
+                              },
+                   "ET0703":  {
+                                  "lat":  7.2937,
+                                  "lon":  37.8302,
+                                  "name":  "Kembata",
+                                  "a1":  "Central Ethiopia"
+                              },
+                   "ET0809":  {
+                                  "lat":  5.3548,
+                                  "lon":  37.3693,
+                                  "name":  "Konso",
+                                  "a1":  "South Ethiopia"
+                              },
+                   "ET0411":  {
+                                  "lat":  6.6089,
+                                  "lon":  40.1486,
+                                  "name":  "Bale",
+                                  "a1":  "Oromia"
+                              },
+                   "ET0412":  {
+                                  "lat":  4.4281,
+                                  "lon":  37.9816,
+                                  "name":  "Borena",
+                                  "a1":  "Oromia"
+                              },
+                   "ET1605":  {
+                                  "lat":  6.4284,
+                                  "lon":  38.9234,
+                                  "name":  "Eastern",
+                                  "a1":  "Sidama"
+                              },
+                   "ET0807":  {
+                                  "lat":  5.6528,
+                                  "lon":  37.3774,
+                                  "name":  "Derashe",
+                                  "a1":  "South Ethiopia"
+                              },
+                   "ET1502":  {
+                                  "lat":  9.6049,
+                                  "lon":  42.0163,
+                                  "name":  "Dire Dawa rural",
+                                  "a1":  "Dire Dawa"
+                              },
+                   "ET0204":  {
+                                  "lat":  12.3270,
+                                  "lon":  40.3177,
+                                  "name":  "Fanti /Zone 4",
+                                  "a1":  "Afar"
+                              },
+                   "ET0403":  {
+                                  "lat":  8.2639,
+                                  "lon":  35.4813,
+                                  "name":  "Ilu Aba Bora",
+                                  "a1":  "Oromia"
+                              },
+                   "ET0201":  {
+                                  "lat":  11.9341,
+                                  "lon":  41.2403,
+                                  "name":  "Awsi /Zone 1",
+                                  "a1":  "Afar"
+                              },
+                   "ET9901":  {
+                                  "lat":  13.8291,
+                                  "lon":  37.0977,
+                                  "name":  "Area 1",
+                                  "a1":  "Contested"
+                              },
+                   "ET0106":  {
+                                  "lat":  13.2961,
+                                  "lon":  39.4111,
+                                  "name":  "South Eastern",
+                                  "a1":  "Tigray"
+                              },
+                   "ET0409":  {
+                                  "lat":  8.6703,
+                                  "lon":  40.7732,
+                                  "name":  "West Hararge",
+                                  "a1":  "Oromia"
+                              },
+                   "ET0309":  {
+                                  "lat":  11.1953,
+                                  "lon":  36.5967,
+                                  "name":  "Awi",
+                                  "a1":  "Amhara"
+                              },
+                   "ET0603":  {
+                                  "lat":  10.2252,
+                                  "lon":  34.7122,
+                                  "name":  "Assosa",
+                                  "a1":  "Benishangul-Gumuz"
+                              },
+                   "ET1202":  {
+                                  "lat":  7.5477,
+                                  "lon":  34.4552,
+                                  "name":  "Agnewak",
+                                  "a1":  "Gambela"
+                              },
+                   "ET0304":  {
+                                  "lat":  10.9971,
+                                  "lon":  39.2081,
+                                  "name":  "South Wello",
+                                  "a1":  "Amhara"
+                              },
+                   "ET0501":  {
+                                  "lat":  10.2501,
+                                  "lon":  41.8336,
+                                  "name":  "Siti",
+                                  "a1":  "Somali"
+                              },
+                   "ET0303":  {
+                                  "lat":  11.9081,
+                                  "lon":  39.2109,
+                                  "name":  "North Wello",
+                                  "a1":  "Amhara"
+                              },
+                   "ET0504":  {
+                                  "lat":  7.8748,
+                                  "lon":  42.2857,
+                                  "name":  "Erer",
+                                  "a1":  "Somali"
+                              },
+                   "ET1204":  {
+                                  "lat":  8.3463,
+                                  "lon":  34.2196,
+                                  "name":  "Itang Special",
+                                  "a1":  "Gambela"
+                              },
+                   "ET0507":  {
+                                  "lat":  7.2368,
+                                  "lon":  46.1139,
+                                  "name":  "Doolo",
+                                  "a1":  "Somali"
+                              },
+                   "ET0107":  {
+                                  "lat":  13.4756,
+                                  "lon":  39.5054,
+                                  "name":  "Mekelle",
+                                  "a1":  "Tigray"
+                              },
+                   "ET0810":  {
+                                  "lat":  5.4815,
+                                  "lon":  37.7768,
+                                  "name":  "Burji",
+                                  "a1":  "South Ethiopia"
+                              },
+                   "ET0702":  {
+                                  "lat":  7.5140,
+                                  "lon":  37.7573,
+                                  "name":  "Hadiya",
+                                  "a1":  "Central Ethiopia"
+                              },
+                   "ET1301":  {
+                                  "lat":  9.2897,
+                                  "lon":  42.1725,
+                                  "name":  "Harari",
+                                  "a1":  "Harari"
+                              },
+                   "ET0414":  {
+                                  "lat":  5.8328,
+                                  "lon":  38.9343,
+                                  "name":  "Guji",
+                                  "a1":  "Oromia"
+                              },
+                   "ET0416":  {
+                                  "lat":  8.4857,
+                                  "lon":  36.3271,
+                                  "name":  "Buno Bedele",
+                                  "a1":  "Oromia"
+                              },
+                   "ET0413":  {
+                                  "lat":  8.5925,
+                                  "lon":  38.1723,
+                                  "name":  "South West Shewa",
+                                  "a1":  "Oromia"
+                              },
+                   "ET0804":  {
+                                  "lat":  6.2817,
+                                  "lon":  36.5598,
+                                  "name":  "Basketo",
+                                  "a1":  "South Ethiopia"
+                              },
+                   "ET0301":  {
+                                  "lat":  13.2286,
+                                  "lon":  38.0657,
+                                  "name":  "North Gondar",
+                                  "a1":  "Amhara"
+                              },
+                   "ET1603":  {
+                                  "lat":  6.6999,
+                                  "lon":  38.3351,
+                                  "name":  "Central",
+                                  "a1":  "Sidama"
+                              },
+                   "ET0808":  {
+                                  "lat":  5.7876,
+                                  "lon":  37.8152,
+                                  "name":  "Kore",
+                                  "a1":  "South Ethiopia"
+                              },
+                   "ET1501":  {
+                                  "lat":  9.6240,
+                                  "lon":  41.8358,
+                                  "name":  "Dire Dawa urban",
+                                  "a1":  "Dire Dawa"
+                              },
+                   "ET0103":  {
+                                  "lat":  14.0768,
+                                  "lon":  39.5613,
+                                  "name":  "Eastern",
+                                  "a1":  "Tigray"
+                              },
+                   "ET0511":  {
+                                  "lat":  4.2137,
+                                  "lon":  39.9788,
+                                  "name":  "Daawa",
+                                  "a1":  "Somali"
+                              },
+                   "ET9903":  {
+                                  "lat":  12.4880,
+                                  "lon":  39.5267,
+                                  "name":  "Area 3",
+                                  "a1":  "Contested"
+                              },
+                   "ET1601":  {
+                                  "lat":  7.0168,
+                                  "lon":  38.4909,
+                                  "name":  "Hawassa town Admin",
+                                  "a1":  "Sidama"
+                              },
+                   "ET1102":  {
+                                  "lat":  7.2278,
+                                  "lon":  36.0779,
+                                  "name":  "Kefa",
+                                  "a1":  "South West Ethiopia"
+                              },
+                   "ET0308":  {
+                                  "lat":  12.7212,
+                                  "lon":  38.8169,
+                                  "name":  "Wag Hamra",
+                                  "a1":  "Amhara"
+                              },
+                   "ET1203":  {
+                                  "lat":  7.3833,
+                                  "lon":  35.1294,
+                                  "name":  "Majang",
+                                  "a1":  "Gambela"
+                              },
+                   "ET0307":  {
+                                  "lat":  10.6918,
+                                  "lon":  37.2117,
+                                  "name":  "West Gojam",
+                                  "a1":  "Amhara"
+                              },
+                   "ET0302":  {
+                                  "lat":  11.7570,
+                                  "lon":  38.0949,
+                                  "name":  "South Gondar",
+                                  "a1":  "Amhara"
+                              },
+                   "ET0503":  {
+                                  "lat":  8.1306,
+                                  "lon":  44.3148,
+                                  "name":  "Jarar",
+                                  "a1":  "Somali"
+                              },
+                   "ET0422":  {
+                                  "lat":  5.0945,
+                                  "lon":  39.4395,
+                                  "name":  "East Borena",
+                                  "a1":  "Oromia"
+                              },
+                   "ET0506":  {
+                                  "lat":  5.8007,
+                                  "lon":  43.6669,
+                                  "name":  "Shabelle",
+                                  "a1":  "Somali"
+                              },
+                   "ET0421":  {
+                                  "lat":  7.2371,
+                                  "lon":  41.2571,
+                                  "name":  "East Bale",
+                                  "a1":  "Oromia"
+                              },
+                   "ET0509":  {
+                                  "lat":  5.1077,
+                                  "lon":  41.0132,
+                                  "name":  "Liban",
+                                  "a1":  "Somali"
+                              },
+                   "ET0418":  {
+                                  "lat":  8.8127,
+                                  "lon":  34.7825,
+                                  "name":  "Kelem Wellega",
+                                  "a1":  "Oromia"
+                              },
+                   "ET0415":  {
+                                  "lat":  5.7433,
+                                  "lon":  38.2727,
+                                  "name":  "West Guji",
+                                  "a1":  "Oromia"
+                              },
+                   "ET0510":  {
+                                  "lat":  7.1329,
+                                  "lon":  42.9851,
+                                  "name":  "Nogob",
+                                  "a1":  "Somali"
+                              },
+                   "ET0313":  {
+                                  "lat":  11.4735,
+                                  "lon":  37.2111,
+                                  "name":  "North Gojam",
+                                  "a1":  "Amhara"
+                              },
+                   "ET0802":  {
+                                  "lat":  6.1895,
+                                  "lon":  37.4290,
+                                  "name":  "Gamo",
+                                  "a1":  "South Ethiopia"
+                              },
+                   "ET0724":  {
+                                  "lat":  7.8125,
+                                  "lon":  37.4884,
+                                  "name":  "Yem",
+                                  "a1":  "Central Ethiopia"
+                              },
+                   "ET0720":  {
+                                  "lat":  7.8084,
+                                  "lon":  38.2260,
+                                  "name":  "Siltie",
+                                  "a1":  "Central Ethiopia"
+                              },
+                   "ET0502":  {
+                                  "lat":  9.1384,
+                                  "lon":  43.2175,
+                                  "name":  "Fafan",
+                                  "a1":  "Somali"
+                              },
+                   "ET0805":  {
+                                  "lat":  5.9315,
+                                  "lon":  36.5266,
+                                  "name":  "Ari",
+                                  "a1":  "South Ethiopia"
+                              },
+                   "ET0104":  {
+                                  "lat":  12.8276,
+                                  "lon":  39.5563,
+                                  "name":  "Southern",
+                                  "a1":  "Tigray"
+                              },
+                   "ET1604":  {
+                                  "lat":  6.5432,
+                                  "lon":  38.4526,
+                                  "name":  "Southern",
+                                  "a1":  "Sidama"
+                              },
+                   "ET0806":  {
+                                  "lat":  5.5682,
+                                  "lon":  37.1617,
+                                  "name":  "Alle Special",
+                                  "a1":  "South Ethiopia"
+                              },
+                   "ET0202":  {
+                                  "lat":  13.4507,
+                                  "lon":  40.6493,
+                                  "name":  "Kilbati /Zone 2",
+                                  "a1":  "Afar"
+                              },
+                   "ET0420":  {
+                                  "lat":  8.9935,
+                                  "lon":  38.7585,
+                                  "name":  "Shager City",
+                                  "a1":  "Oromia"
+                              },
+                   "ET0102":  {
+                                  "lat":  13.9703,
+                                  "lon":  38.8915,
+                                  "name":  "Central",
+                                  "a1":  "Tigray"
+                              },
+                   "ET0406":  {
+                                  "lat":  9.6924,
+                                  "lon":  38.7167,
+                                  "name":  "North Shewa (OR)",
+                                  "a1":  "Oromia"
+                              },
+                   "ET0404":  {
+                                  "lat":  7.9197,
+                                  "lon":  36.8302,
+                                  "name":  "Jimma",
+                                  "a1":  "Oromia"
+                              },
+                   "ET0811":  {
+                                  "lat":  6.1437,
+                                  "lon":  38.2724,
+                                  "name":  "Gedeo",
+                                  "a1":  "South Ethiopia"
+                              },
+                   "ET0812":  {
+                                  "lat":  5.3193,
+                                  "lon":  36.3609,
+                                  "name":  "South Omo",
+                                  "a1":  "South Ethiopia"
+                              },
+                   "ET1101":  {
+                                  "lat":  7.5376,
+                                  "lon":  35.4127,
+                                  "name":  "Sheka",
+                                  "a1":  "South West Ethiopia"
+                              },
+                   "ET1104":  {
+                                  "lat":  6.9712,
+                                  "lon":  37.0997,
+                                  "name":  "Dawuro",
+                                  "a1":  "South West Ethiopia"
+                              },
+                   "ET0602":  {
+                                  "lat":  11.0016,
+                                  "lon":  35.7693,
+                                  "name":  "Metekel",
+                                  "a1":  "Benishangul-Gumuz"
+                              }
+               },
+    "flows":  {
+                  "2023":  [
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0305",
+                                   "v":  224
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0603",
+                                   "v":  8455
+                               },
+                               {
+                                   "o":  "Addis Ababa",
+                                   "dPc":  "ET0104",
+                                   "v":  50
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0418",
+                                   "v":  35818
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET1106",
+                                   "v":  1384
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0602",
+                                   "v":  44384
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0413",
+                                   "v":  340
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0504",
+                                   "v":  30239
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0102",
+                                   "v":  3611
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0509",
+                                   "v":  139721
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0410",
+                                   "v":  81454
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0310",
+                                   "v":  2537
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0402",
+                                   "v":  7203
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0106",
+                                   "v":  12223
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0308",
+                                   "v":  17008
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0504",
+                                   "v":  6775
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET1301",
+                                   "v":  1969
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0503",
+                                   "v":  26102
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0511",
+                                   "v":  49448
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0419",
+                                   "v":  51149
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0106",
+                                   "v":  2381
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0205",
+                                   "v":  7520
+                               },
+                               {
+                                   "o":  "South West Ethiopia",
+                                   "dPc":  "ET1600",
+                                   "v":  4099
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0501",
+                                   "v":  6227
+                               },
+                               {
+                                   "o":  "Sidama",
+                                   "dPc":  "ET0417",
+                                   "v":  92
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0603",
+                                   "v":  17470
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0409",
+                                   "v":  16666
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0312",
+                                   "v":  579
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET1600",
+                                   "v":  3908
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0604",
+                                   "v":  119
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0103",
+                                   "v":  814
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0501",
+                                   "v":  5262
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0417",
+                                   "v":  623
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0421",
+                                   "v":  6667
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0308",
+                                   "v":  1489
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0201",
+                                   "v":  11304
+                               },
+                               {
+                                   "o":  "Tigray",
+                                   "dPc":  "ET0106",
+                                   "v":  7611
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0507",
+                                   "v":  21728
+                               },
+                               {
+                                   "o":  "Central Ethiopia",
+                                   "dPc":  "ET0703",
+                                   "v":  176
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET1104",
+                                   "v":  188
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0510",
+                                   "v":  49909
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0505",
+                                   "v":  1401
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0104",
+                                   "v":  1406
+                               },
+                               {
+                                   "o":  "South West Ethiopia",
+                                   "dPc":  "ET0305",
+                                   "v":  197
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0417",
+                                   "v":  12719
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0414",
+                                   "v":  22491
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0104",
+                                   "v":  2138
+                               },
+                               {
+                                   "o":  "Tigray",
+                                   "dPc":  "ET0107",
+                                   "v":  128347
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0410",
+                                   "v":  66664
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0311",
+                                   "v":  272
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0301",
+                                   "v":  411
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0104",
+                                   "v":  1981
+                               },
+                               {
+                                   "o":  "South West Ethiopia",
+                                   "dPc":  "ET0702",
+                                   "v":  13152
+                               },
+                               {
+                                   "o":  "South West Ethiopia",
+                                   "dPc":  "ET1102",
+                                   "v":  636
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0102",
+                                   "v":  227
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0508",
+                                   "v":  7354
+                               },
+                               {
+                                   "o":  "Central Ethiopia",
+                                   "dPc":  "ET0724",
+                                   "v":  276
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0311",
+                                   "v":  544
+                               },
+                               {
+                                   "o":  "Tigray",
+                                   "dPc":  "ET0103",
+                                   "v":  87594
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0704",
+                                   "v":  3955
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0602",
+                                   "v":  2097
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0404",
+                                   "v":  534
+                               },
+                               {
+                                   "o":  "Gambela",
+                                   "dPc":  "ET1203",
+                                   "v":  172
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0502",
+                                   "v":  121495
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0412",
+                                   "v":  158838
+                               },
+                               {
+                                   "o":  "Tigray",
+                                   "dPc":  "ET0301",
+                                   "v":  9906
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0408",
+                                   "v":  1275
+                               },
+                               {
+                                   "o":  "Gambela",
+                                   "dPc":  "ET1202",
+                                   "v":  3504
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0501",
+                                   "v":  81234
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0402",
+                                   "v":  60027
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0505",
+                                   "v":  15897
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0401",
+                                   "v":  22117
+                               },
+                               {
+                                   "o":  "Tigray",
+                                   "dPc":  "ET0104",
+                                   "v":  35667
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0307",
+                                   "v":  5165
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0509",
+                                   "v":  132616
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0508",
+                                   "v":  164189
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0305",
+                                   "v":  26612
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0312",
+                                   "v":  718
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0701",
+                                   "v":  2175
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0311",
+                                   "v":  1865
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0506",
+                                   "v":  124073
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0702",
+                                   "v":  2409
+                               },
+                               {
+                                   "o":  "Tigray",
+                                   "dPc":  "ET0303",
+                                   "v":  641
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0107",
+                                   "v":  11571
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0307",
+                                   "v":  162
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0406",
+                                   "v":  21438
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0510",
+                                   "v":  809
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0303",
+                                   "v":  161
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0405",
+                                   "v":  18833
+                               },
+                               {
+                                   "o":  "Tigray",
+                                   "dPc":  "ET0311",
+                                   "v":  3137
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0408",
+                                   "v":  1527
+                               },
+                               {
+                                   "o":  "South West Ethiopia",
+                                   "dPc":  "ET0703",
+                                   "v":  11117
+                               },
+                               {
+                                   "o":  "Central Ethiopia",
+                                   "dPc":  "ET0702",
+                                   "v":  1060
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0204",
+                                   "v":  1112
+                               },
+                               {
+                                   "o":  "Central Ethiopia",
+                                   "dPc":  "ET0725",
+                                   "v":  524
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0503",
+                                   "v":  225
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0720",
+                                   "v":  3169
+                               },
+                               {
+                                   "o":  "Sidama",
+                                   "dPc":  "ET1600",
+                                   "v":  28312
+                               },
+                               {
+                                   "o":  "Tigray",
+                                   "dPc":  "ET0308",
+                                   "v":  3398
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0413",
+                                   "v":  2816
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0702",
+                                   "v":  131
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0409",
+                                   "v":  6270
+                               },
+                               {
+                                   "o":  "South West Ethiopia",
+                                   "dPc":  "ET0106",
+                                   "v":  1049
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0412",
+                                   "v":  48816
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0304",
+                                   "v":  1910
+                               },
+                               {
+                                   "o":  "South West Ethiopia",
+                                   "dPc":  "ET1105",
+                                   "v":  1052
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0203",
+                                   "v":  28533
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0411",
+                                   "v":  4560
+                               },
+                               {
+                                   "o":  "South West Ethiopia",
+                                   "dPc":  "ET1106",
+                                   "v":  2934
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0305",
+                                   "v":  9324
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0702",
+                                   "v":  4098
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0702",
+                                   "v":  128
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0304",
+                                   "v":  16813
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0310",
+                                   "v":  8356
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0106",
+                                   "v":  491
+                               },
+                               {
+                                   "o":  "Central Ethiopia",
+                                   "dPc":  "ET0704",
+                                   "v":  3390
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0202",
+                                   "v":  13436
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0416",
+                                   "v":  8385
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0506",
+                                   "v":  1478
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0511",
+                                   "v":  78049
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0415",
+                                   "v":  134970
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0303",
+                                   "v":  31168
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0720",
+                                   "v":  791
+                               },
+                               {
+                                   "o":  "South West Ethiopia",
+                                   "dPc":  "ET1103",
+                                   "v":  697
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0304",
+                                   "v":  73
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0401",
+                                   "v":  49841
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0404",
+                                   "v":  17139
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0301",
+                                   "v":  527
+                               },
+                               {
+                                   "o":  "Tigray",
+                                   "dPc":  "ET0102",
+                                   "v":  190227
+                               },
+                               {
+                                   "o":  "South West Ethiopia",
+                                   "dPc":  "ET0726",
+                                   "v":  422
+                               },
+                               {
+                                   "o":  "Tigray",
+                                   "dPc":  "ET0101",
+                                   "v":  348134
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0421",
+                                   "v":  2954
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0103",
+                                   "v":  5293
+                               },
+                               {
+                                   "o":  "Gambela",
+                                   "dPc":  "ET1201",
+                                   "v":  24863
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0502",
+                                   "v":  25552
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0604",
+                                   "v":  2172
+                               },
+                               {
+                                   "o":  "Harari",
+                                   "dPc":  "ET1301",
+                                   "v":  251
+                               }
+                           ],
+                  "2021":  [
+                               {
+                                   "o":  "Harari",
+                                   "dPc":  "ET1301",
+                                   "v":  326
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0404",
+                                   "v":  516
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0509",
+                                   "v":  53136
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0413",
+                                   "v":  223
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0504",
+                                   "v":  17131
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0509",
+                                   "v":  87899
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0410",
+                                   "v":  59554
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0402",
+                                   "v":  24756
+                               },
+                               {
+                                   "o":  "Central Ethiopia",
+                                   "dPc":  "ET0702",
+                                   "v":  762
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0504",
+                                   "v":  1382
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET1301",
+                                   "v":  2799
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0511",
+                                   "v":  37411
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0205",
+                                   "v":  2852
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0501",
+                                   "v":  15727
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0412",
+                                   "v":  10679
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0309",
+                                   "v":  15081
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0305",
+                                   "v":  22062
+                               },
+                               {
+                                   "o":  "Central Ethiopia",
+                                   "dPc":  "ET0720",
+                                   "v":  613
+                               },
+                               {
+                                   "o":  "Gambela",
+                                   "dPc":  "ET1202",
+                                   "v":  4587
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0421",
+                                   "v":  11650
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0306",
+                                   "v":  5180
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0201",
+                                   "v":  36729
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0305",
+                                   "v":  7550
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0202",
+                                   "v":  8340
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0306",
+                                   "v":  11177
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0505",
+                                   "v":  366
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0417",
+                                   "v":  17356
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0414",
+                                   "v":  9304
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0501",
+                                   "v":  83105
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0410",
+                                   "v":  66103
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0407",
+                                   "v":  1466
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0302",
+                                   "v":  773
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0409",
+                                   "v":  18085
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0302",
+                                   "v":  21403
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0302",
+                                   "v":  6849
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0508",
+                                   "v":  10591
+                               },
+                               {
+                                   "o":  "Central Ethiopia",
+                                   "dPc":  "ET0724",
+                                   "v":  231
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0311",
+                                   "v":  1219
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0507",
+                                   "v":  48809
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0502",
+                                   "v":  26192
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0502",
+                                   "v":  143375
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0503",
+                                   "v":  30095
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0408",
+                                   "v":  1794
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0311",
+                                   "v":  17027
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0405",
+                                   "v":  201
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0402",
+                                   "v":  33028
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0406",
+                                   "v":  88
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0309",
+                                   "v":  3096
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0401",
+                                   "v":  1186
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0421",
+                                   "v":  2760
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0307",
+                                   "v":  128815
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0808",
+                                   "v":  818
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0508",
+                                   "v":  64998
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0312",
+                                   "v":  625
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0701",
+                                   "v":  3972
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0309",
+                                   "v":  20569
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0506",
+                                   "v":  87157
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0702",
+                                   "v":  240
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0417",
+                                   "v":  485
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0406",
+                                   "v":  669
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0306",
+                                   "v":  562
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0408",
+                                   "v":  2982
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0411",
+                                   "v":  5939
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0307",
+                                   "v":  111037
+                               },
+                               {
+                                   "o":  "Central Ethiopia",
+                                   "dPc":  "ET0701",
+                                   "v":  17355
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0503",
+                                   "v":  283
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0720",
+                                   "v":  3189
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0506",
+                                   "v":  1470
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0510",
+                                   "v":  25575
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0801",
+                                   "v":  2614
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0409",
+                                   "v":  6180
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET1600",
+                                   "v":  4145
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0304",
+                                   "v":  888
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0203",
+                                   "v":  58519
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0407",
+                                   "v":  3150
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0412",
+                                   "v":  116017
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0702",
+                                   "v":  1933
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0304",
+                                   "v":  5511
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0310",
+                                   "v":  6371
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET1501",
+                                   "v":  2491
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0505",
+                                   "v":  20723
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0416",
+                                   "v":  7208
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0510",
+                                   "v":  8417
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0415",
+                                   "v":  49235
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0414",
+                                   "v":  5810
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0810",
+                                   "v":  1291
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0401",
+                                   "v":  33599
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0404",
+                                   "v":  16110
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0511",
+                                   "v":  107334
+                               },
+                               {
+                                   "o":  "Gambela",
+                                   "dPc":  "ET1204",
+                                   "v":  419
+                               },
+                               {
+                                   "o":  "Gambela",
+                                   "dPc":  "ET1201",
+                                   "v":  29315
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0720",
+                                   "v":  690
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0703",
+                                   "v":  205
+                               }
+                           ],
+                  "2024":  [
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0412",
+                                   "v":  27448
+                               },
+                               {
+                                   "o":  "Addis Ababa",
+                                   "dPc":  "ET0104",
+                                   "v":  39
+                               },
+                               {
+                                   "o":  "Tigray",
+                                   "dPc":  "ET0107",
+                                   "v":  105008
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET1106",
+                                   "v":  1307
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0413",
+                                   "v":  343
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0102",
+                                   "v":  4154
+                               },
+                               {
+                                   "o":  "South Ethiopia",
+                                   "dPc":  "ET1605",
+                                   "v":  132
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0310",
+                                   "v":  3691
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0402",
+                                   "v":  9123
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0106",
+                                   "v":  6673
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0702",
+                                   "v":  2650
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET1301",
+                                   "v":  775
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0419",
+                                   "v":  68909
+                               },
+                               {
+                                   "o":  "Central Ethiopia",
+                                   "dPc":  "ET0726",
+                                   "v":  110
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0106",
+                                   "v":  3694
+                               },
+                               {
+                                   "o":  "Gambela",
+                                   "dPc":  "ET1203",
+                                   "v":  150
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0205",
+                                   "v":  2584
+                               },
+                               {
+                                   "o":  "South West Ethiopia",
+                                   "dPc":  "ET1103",
+                                   "v":  1011
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0206",
+                                   "v":  31154
+                               },
+                               {
+                                   "o":  "Sidama",
+                                   "dPc":  "ET0417",
+                                   "v":  94
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0311",
+                                   "v":  536
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0409",
+                                   "v":  15719
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0305",
+                                   "v":  7340
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0416",
+                                   "v":  8396
+                               },
+                               {
+                                   "o":  "Gambela",
+                                   "dPc":  "ET1202",
+                                   "v":  5164
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0102",
+                                   "v":  336
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0421",
+                                   "v":  11635
+                               },
+                               {
+                                   "o":  "Central Ethiopia",
+                                   "dPc":  "ET0725",
+                                   "v":  2053
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0201",
+                                   "v":  19501
+                               },
+                               {
+                                   "o":  "Tigray",
+                                   "dPc":  "ET0106",
+                                   "v":  8793
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0305",
+                                   "v":  28123
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0202",
+                                   "v":  19838
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET1104",
+                                   "v":  195
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0107",
+                                   "v":  10478
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0104",
+                                   "v":  940
+                               },
+                               {
+                                   "o":  "South West Ethiopia",
+                                   "dPc":  "ET0305",
+                                   "v":  154
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0417",
+                                   "v":  3885
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0414",
+                                   "v":  43614
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0104",
+                                   "v":  1286
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0410",
+                                   "v":  62266
+                               },
+                               {
+                                   "o":  "Central Ethiopia",
+                                   "dPc":  "ET0704",
+                                   "v":  7648
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0104",
+                                   "v":  2694
+                               },
+                               {
+                                   "o":  "South West Ethiopia",
+                                   "dPc":  "ET0702",
+                                   "v":  12671
+                               },
+                               {
+                                   "o":  "Tigray",
+                                   "dPc":  "ET1603",
+                                   "v":  528
+                               },
+                               {
+                                   "o":  "Tigray",
+                                   "dPc":  "ET0311",
+                                   "v":  3404
+                               },
+                               {
+                                   "o":  "Central Ethiopia",
+                                   "dPc":  "ET0724",
+                                   "v":  230
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0311",
+                                   "v":  315
+                               },
+                               {
+                                   "o":  "Tigray",
+                                   "dPc":  "ET0103",
+                                   "v":  77839
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0704",
+                                   "v":  2277
+                               },
+                               {
+                                   "o":  "Tigray",
+                                   "dPc":  "ET9903",
+                                   "v":  8313
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0404",
+                                   "v":  546
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0411",
+                                   "v":  4255
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0418",
+                                   "v":  21267
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0412",
+                                   "v":  30331
+                               },
+                               {
+                                   "o":  "Addis Ababa",
+                                   "dPc":  "ET0304",
+                                   "v":  515
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET9903",
+                                   "v":  152
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0402",
+                                   "v":  52257
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0401",
+                                   "v":  14663
+                               },
+                               {
+                                   "o":  "Tigray",
+                                   "dPc":  "ET0104",
+                                   "v":  15485
+                               },
+                               {
+                                   "o":  "Addis Ababa",
+                                   "dPc":  "ET0303",
+                                   "v":  415
+                               },
+                               {
+                                   "o":  "South Ethiopia",
+                                   "dPc":  "ET0702",
+                                   "v":  733
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0701",
+                                   "v":  2198
+                               },
+                               {
+                                   "o":  "Sidama",
+                                   "dPc":  "ET1602",
+                                   "v":  21448
+                               },
+                               {
+                                   "o":  "Tigray",
+                                   "dPc":  "ET0303",
+                                   "v":  8762
+                               },
+                               {
+                                   "o":  "South West Ethiopia",
+                                   "dPc":  "ET1603",
+                                   "v":  749
+                               },
+                               {
+                                   "o":  "Tigray",
+                                   "dPc":  "ET0301",
+                                   "v":  13017
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0417",
+                                   "v":  518
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0406",
+                                   "v":  30095
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0303",
+                                   "v":  616
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0405",
+                                   "v":  18763
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0422",
+                                   "v":  67866
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0410",
+                                   "v":  38619
+                               },
+                               {
+                                   "o":  "South West Ethiopia",
+                                   "dPc":  "ET0703",
+                                   "v":  11434
+                               },
+                               {
+                                   "o":  "Central Ethiopia",
+                                   "dPc":  "ET0702",
+                                   "v":  2965
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0204",
+                                   "v":  3110
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0308",
+                                   "v":  16278
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0720",
+                                   "v":  2779
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET9903",
+                                   "v":  851
+                               },
+                               {
+                                   "o":  "Tigray",
+                                   "dPc":  "ET0308",
+                                   "v":  16233
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0413",
+                                   "v":  14066
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0103",
+                                   "v":  925
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0409",
+                                   "v":  6427
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0421",
+                                   "v":  2563
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0304",
+                                   "v":  1679
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0203",
+                                   "v":  47580
+                               },
+                               {
+                                   "o":  "South West Ethiopia",
+                                   "dPc":  "ET1604",
+                                   "v":  1440
+                               },
+                               {
+                                   "o":  "South West Ethiopia",
+                                   "dPc":  "ET1106",
+                                   "v":  3065
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0305",
+                                   "v":  230
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0702",
+                                   "v":  4156
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0702",
+                                   "v":  132
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0103",
+                                   "v":  255
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0304",
+                                   "v":  21382
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0310",
+                                   "v":  12020
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0106",
+                                   "v":  1003
+                               },
+                               {
+                                   "o":  "Sidama",
+                                   "dPc":  "ET1605",
+                                   "v":  6760
+                               },
+                               {
+                                   "o":  "South West Ethiopia",
+                                   "dPc":  "ET1102",
+                                   "v":  645
+                               },
+                               {
+                                   "o":  "South West Ethiopia",
+                                   "dPc":  "ET0304",
+                                   "v":  160
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0308",
+                                   "v":  1343
+                               },
+                               {
+                                   "o":  "South West Ethiopia",
+                                   "dPc":  "ET1602",
+                                   "v":  1988
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0415",
+                                   "v":  114535
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0303",
+                                   "v":  22620
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0720",
+                                   "v":  1320
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET1605",
+                                   "v":  6020
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0401",
+                                   "v":  41270
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0404",
+                                   "v":  17300
+                               },
+                               {
+                                   "o":  "Tigray",
+                                   "dPc":  "ET0102",
+                                   "v":  191739
+                               },
+                               {
+                                   "o":  "South West Ethiopia",
+                                   "dPc":  "ET0726",
+                                   "v":  292
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0101",
+                                   "v":  1804
+                               },
+                               {
+                                   "o":  "Tigray",
+                                   "dPc":  "ET0101",
+                                   "v":  308102
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0422",
+                                   "v":  19079
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0103",
+                                   "v":  7177
+                               },
+                               {
+                                   "o":  "Gambela",
+                                   "dPc":  "ET1201",
+                                   "v":  10929
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET9903",
+                                   "v":  1352
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0408",
+                                   "v":  3314
+                               }
+                           ],
+                  "2020":  [
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0401",
+                                   "v":  10961
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0404",
+                                   "v":  79
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0602",
+                                   "v":  6292
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0413",
+                                   "v":  223
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0504",
+                                   "v":  908
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0102",
+                                   "v":  10606
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0509",
+                                   "v":  106120
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0105",
+                                   "v":  6103
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0310",
+                                   "v":  183
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0402",
+                                   "v":  11405
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0509",
+                                   "v":  5578
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0504",
+                                   "v":  26298
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET1301",
+                                   "v":  2665
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0507",
+                                   "v":  62403
+                               },
+                               {
+                                   "o":  "Tigray",
+                                   "dPc":  "ET0314",
+                                   "v":  287
+                               },
+                               {
+                                   "o":  "Central Ethiopia",
+                                   "dPc":  "ET0106",
+                                   "v":  190
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0106",
+                                   "v":  2598
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0205",
+                                   "v":  3599
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0720",
+                                   "v":  586
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0501",
+                                   "v":  6875
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0412",
+                                   "v":  135182
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0603",
+                                   "v":  430
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0409",
+                                   "v":  15811
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0312",
+                                   "v":  147
+                               },
+                               {
+                                   "o":  "Central Ethiopia",
+                                   "dPc":  "ET0720",
+                                   "v":  4656
+                               },
+                               {
+                                   "o":  "Central Ethiopia",
+                                   "dPc":  "ET0304",
+                                   "v":  360
+                               },
+                               {
+                                   "o":  "Gambela",
+                                   "dPc":  "ET1202",
+                                   "v":  3248
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0417",
+                                   "v":  569
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0302",
+                                   "v":  117
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0308",
+                                   "v":  324
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0201",
+                                   "v":  69798
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0305",
+                                   "v":  292
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0202",
+                                   "v":  10872
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0314",
+                                   "v":  3257
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0101",
+                                   "v":  8864
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0313",
+                                   "v":  3959
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0411",
+                                   "v":  22494
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0414",
+                                   "v":  74055
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0501",
+                                   "v":  40057
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0410",
+                                   "v":  41770
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0407",
+                                   "v":  24417
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0107",
+                                   "v":  980
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0307",
+                                   "v":  255
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0104",
+                                   "v":  15522
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0302",
+                                   "v":  4139
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0306",
+                                   "v":  401
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0508",
+                                   "v":  70454
+                               },
+                               {
+                                   "o":  "Central Ethiopia",
+                                   "dPc":  "ET0724",
+                                   "v":  252
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0502",
+                                   "v":  104914
+                               },
+                               {
+                                   "o":  "Tigray",
+                                   "dPc":  "ET0103",
+                                   "v":  473
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0502",
+                                   "v":  26102
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0503",
+                                   "v":  31633
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0408",
+                                   "v":  1982
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0405",
+                                   "v":  349
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0402",
+                                   "v":  25593
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0406",
+                                   "v":  128
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0505",
+                                   "v":  20810
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0104",
+                                   "v":  86
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0102",
+                                   "v":  344
+                               },
+                               {
+                                   "o":  "Central Ethiopia",
+                                   "dPc":  "ET0103",
+                                   "v":  10784
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0808",
+                                   "v":  779
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0422",
+                                   "v":  85238
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0701",
+                                   "v":  2590
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0309",
+                                   "v":  245
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0506",
+                                   "v":  97615
+                               },
+                               {
+                                   "o":  "Central Ethiopia",
+                                   "dPc":  "ET0714",
+                                   "v":  2569
+                               },
+                               {
+                                   "o":  "Tigray",
+                                   "dPc":  "ET0303",
+                                   "v":  30
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0307",
+                                   "v":  1785
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0102",
+                                   "v":  148
+                               },
+                               {
+                                   "o":  "Central Ethiopia",
+                                   "dPc":  "ET0104",
+                                   "v":  1224
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0405",
+                                   "v":  566
+                               },
+                               {
+                                   "o":  "Central Ethiopia",
+                                   "dPc":  "ET0107",
+                                   "v":  27331
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0408",
+                                   "v":  1604
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0411",
+                                   "v":  17747
+                               },
+                               {
+                                   "o":  "Central Ethiopia",
+                                   "dPc":  "ET0702",
+                                   "v":  1044
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0204",
+                                   "v":  7740
+                               },
+                               {
+                                   "o":  "Central Ethiopia",
+                                   "dPc":  "ET0701",
+                                   "v":  4087
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0503",
+                                   "v":  277
+                               },
+                               {
+                                   "o":  "Tigray",
+                                   "dPc":  "ET0313",
+                                   "v":  665
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0720",
+                                   "v":  2253
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0413",
+                                   "v":  3976
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0602",
+                                   "v":  389
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0103",
+                                   "v":  3248
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0409",
+                                   "v":  5470
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0203",
+                                   "v":  56042
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0420",
+                                   "v":  14912
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0724",
+                                   "v":  976
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0303",
+                                   "v":  59
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0412",
+                                   "v":  3056
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0103",
+                                   "v":  4300
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0304",
+                                   "v":  799
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0310",
+                                   "v":  118
+                               },
+                               {
+                                   "o":  "Central Ethiopia",
+                                   "dPc":  "ET1600",
+                                   "v":  30517
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET1501",
+                                   "v":  4875
+                               },
+                               {
+                                   "o":  "Central Ethiopia",
+                                   "dPc":  "ET0417",
+                                   "v":  10835
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0510",
+                                   "v":  144533
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0303",
+                                   "v":  927
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0414",
+                                   "v":  7792
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0304",
+                                   "v":  93
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0401",
+                                   "v":  29867
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0404",
+                                   "v":  14566
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0302",
+                                   "v":  4577
+                               },
+                               {
+                                   "o":  "Tigray",
+                                   "dPc":  "ET0102",
+                                   "v":  6375
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0410",
+                                   "v":  29586
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0103",
+                                   "v":  1405
+                               },
+                               {
+                                   "o":  "Gambela",
+                                   "dPc":  "ET1201",
+                                   "v":  33471
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0511",
+                                   "v":  29397
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0604",
+                                   "v":  1201
+                               },
+                               {
+                                   "o":  "Central Ethiopia",
+                                   "dPc":  "ET0305",
+                                   "v":  44
+                               }
+                           ],
+                  "2022":  [
+                               {
+                                   "o":  "Harari",
+                                   "dPc":  "ET1301",
+                                   "v":  326
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0603",
+                                   "v":  5076
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0404",
+                                   "v":  229
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET1106",
+                                   "v":  526
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0602",
+                                   "v":  103293
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0413",
+                                   "v":  179
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0504",
+                                   "v":  28920
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0509",
+                                   "v":  75120
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0410",
+                                   "v":  67714
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0310",
+                                   "v":  135
+                               },
+                               {
+                                   "o":  "Tigray",
+                                   "dPc":  "ET0302",
+                                   "v":  125
+                               },
+                               {
+                                   "o":  "Central Ethiopia",
+                                   "dPc":  "ET0702",
+                                   "v":  367
+                               },
+                               {
+                                   "o":  "South West Ethiopia",
+                                   "dPc":  "ET0304",
+                                   "v":  179
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0504",
+                                   "v":  11262
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET1301",
+                                   "v":  2572
+                               },
+                               {
+                                   "o":  "Tigray",
+                                   "dPc":  "ET0311",
+                                   "v":  2769
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0511",
+                                   "v":  74940
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0417",
+                                   "v":  100
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0205",
+                                   "v":  4290
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0720",
+                                   "v":  812
+                               },
+                               {
+                                   "o":  "South West Ethiopia",
+                                   "dPc":  "ET1600",
+                                   "v":  5345
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0501",
+                                   "v":  11544
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0412",
+                                   "v":  120811
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0603",
+                                   "v":  13684
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0309",
+                                   "v":  1599
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0312",
+                                   "v":  1092
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET1600",
+                                   "v":  1402
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0305",
+                                   "v":  6018
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0416",
+                                   "v":  7046
+                               },
+                               {
+                                   "o":  "Gambela",
+                                   "dPc":  "ET1202",
+                                   "v":  5299
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0417",
+                                   "v":  476
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0421",
+                                   "v":  11930
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0306",
+                                   "v":  3004
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0412",
+                                   "v":  92754
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0201",
+                                   "v":  22802
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0507",
+                                   "v":  44586
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0810",
+                                   "v":  1256
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0306",
+                                   "v":  16271
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0505",
+                                   "v":  378
+                               },
+                               {
+                                   "o":  "South West Ethiopia",
+                                   "dPc":  "ET0305",
+                                   "v":  414
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0417",
+                                   "v":  17080
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0414",
+                                   "v":  88331
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0501",
+                                   "v":  93060
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0410",
+                                   "v":  68790
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0311",
+                                   "v":  543
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0307",
+                                   "v":  372
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0409",
+                                   "v":  16513
+                               },
+                               {
+                                   "o":  "South West Ethiopia",
+                                   "dPc":  "ET0702",
+                                   "v":  11154
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0302",
+                                   "v":  29086
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0302",
+                                   "v":  8522
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0305",
+                                   "v":  26390
+                               },
+                               {
+                                   "o":  "Central Ethiopia",
+                                   "dPc":  "ET0724",
+                                   "v":  230
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0311",
+                                   "v":  1134
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0303",
+                                   "v":  811
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0602",
+                                   "v":  3384
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0502",
+                                   "v":  28602
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0411",
+                                   "v":  10906
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0502",
+                                   "v":  132570
+                               },
+                               {
+                                   "o":  "Tigray",
+                                   "dPc":  "ET0301",
+                                   "v":  7973
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0408",
+                                   "v":  1790
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0311",
+                                   "v":  12990
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0405",
+                                   "v":  209
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0402",
+                                   "v":  5049
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0402",
+                                   "v":  103710
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0406",
+                                   "v":  88
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0309",
+                                   "v":  1690
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0401",
+                                   "v":  2333
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0421",
+                                   "v":  3613
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0307",
+                                   "v":  106687
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0808",
+                                   "v":  756
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0312",
+                                   "v":  811
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0701",
+                                   "v":  6173
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0309",
+                                   "v":  29610
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0506",
+                                   "v":  95448
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0702",
+                                   "v":  557
+                               },
+                               {
+                                   "o":  "Tigray",
+                                   "dPc":  "ET0303",
+                                   "v":  33076
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0307",
+                                   "v":  51100
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0406",
+                                   "v":  16071
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0510",
+                                   "v":  762
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0405",
+                                   "v":  10138
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0306",
+                                   "v":  562
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0408",
+                                   "v":  2100
+                               },
+                               {
+                                   "o":  "South West Ethiopia",
+                                   "dPc":  "ET0703",
+                                   "v":  11556
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0303",
+                                   "v":  10940
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0308",
+                                   "v":  62081
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0503",
+                                   "v":  276
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0720",
+                                   "v":  3196
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0506",
+                                   "v":  1482
+                               },
+                               {
+                                   "o":  "Tigray",
+                                   "dPc":  "ET0308",
+                                   "v":  5702
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0510",
+                                   "v":  55674
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0801",
+                                   "v":  2453
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0409",
+                                   "v":  5644
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0503",
+                                   "v":  31992
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET1600",
+                                   "v":  41570
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0304",
+                                   "v":  1780
+                               },
+                               {
+                                   "o":  "South West Ethiopia",
+                                   "dPc":  "ET1105",
+                                   "v":  1075
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0203",
+                                   "v":  24564
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0411",
+                                   "v":  10049
+                               },
+                               {
+                                   "o":  "South West Ethiopia",
+                                   "dPc":  "ET1106",
+                                   "v":  2062
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0305",
+                                   "v":  215
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0702",
+                                   "v":  3903
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0304",
+                                   "v":  18969
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0310",
+                                   "v":  4779
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0304",
+                                   "v":  372
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET1301",
+                                   "v":  235
+                               },
+                               {
+                                   "o":  "South West Ethiopia",
+                                   "dPc":  "ET1102",
+                                   "v":  633
+                               },
+                               {
+                                   "o":  "Afar",
+                                   "dPc":  "ET0202",
+                                   "v":  9767
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0703",
+                                   "v":  133
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0511",
+                                   "v":  124680
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0415",
+                                   "v":  118384
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0505",
+                                   "v":  28308
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0414",
+                                   "v":  6445
+                               },
+                               {
+                                   "o":  "South West Ethiopia",
+                                   "dPc":  "ET1103",
+                                   "v":  5020
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0304",
+                                   "v":  58
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0302",
+                                   "v":  316
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET0404",
+                                   "v":  14092
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0301",
+                                   "v":  61072
+                               },
+                               {
+                                   "o":  "Oromia",
+                                   "dPc":  "ET1501",
+                                   "v":  570
+                               },
+                               {
+                                   "o":  "Amhara",
+                                   "dPc":  "ET0304",
+                                   "v":  205
+                               },
+                               {
+                                   "o":  "Gambela",
+                                   "dPc":  "ET1204",
+                                   "v":  10210
+                               },
+                               {
+                                   "o":  "South West Ethiopia",
+                                   "dPc":  "ET0302",
+                                   "v":  2113
+                               },
+                               {
+                                   "o":  "Central Ethiopia",
+                                   "dPc":  "ET0701",
+                                   "v":  1457
+                               },
+                               {
+                                   "o":  "Gambela",
+                                   "dPc":  "ET1201",
+                                   "v":  12942
+                               },
+                               {
+                                   "o":  "Benishangul-Gumuz",
+                                   "dPc":  "ET0401",
+                                   "v":  4413
+                               },
+                               {
+                                   "o":  "Somali",
+                                   "dPc":  "ET0509",
+                                   "v":  71364
+                               },
+                               {
+                                   "o":  "South West Ethiopia",
+                                   "dPc":  "ET1101",
+                                   "v":  9913
+                               }
+                           ]
+              }
+}

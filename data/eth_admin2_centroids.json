@@ -1,0 +1,876 @@
+﻿[
+    {
+        "pcode":  "ET0511",
+        "name":  "Daawa",
+        "adm1pcode":  "ET05",
+        "adm1name":  "Somali",
+        "lat":  4.2137,
+        "lon":  39.9788
+    },
+    {
+        "pcode":  "ET9903",
+        "name":  "Area 3",
+        "adm1pcode":  "ET99",
+        "adm1name":  "Contested",
+        "lat":  12.4880,
+        "lon":  39.5267
+    },
+    {
+        "pcode":  "ET0309",
+        "name":  "Awi",
+        "adm1pcode":  "ET03",
+        "adm1name":  "Amhara",
+        "lat":  11.1953,
+        "lon":  36.5967
+    },
+    {
+        "pcode":  "ET1501",
+        "name":  "Dire Dawa urban",
+        "adm1pcode":  "ET15",
+        "adm1name":  "Dire Dawa",
+        "lat":  9.6240,
+        "lon":  41.8358
+    },
+    {
+        "pcode":  "ET0103",
+        "name":  "Eastern",
+        "adm1pcode":  "ET01",
+        "adm1name":  "Tigray",
+        "lat":  14.0768,
+        "lon":  39.5613
+    },
+    {
+        "pcode":  "ET0104",
+        "name":  "Southern",
+        "adm1pcode":  "ET01",
+        "adm1name":  "Tigray",
+        "lat":  12.8276,
+        "lon":  39.5563
+    },
+    {
+        "pcode":  "ET1102",
+        "name":  "Kefa",
+        "adm1pcode":  "ET11",
+        "adm1name":  "South West Ethiopia",
+        "lat":  7.2278,
+        "lon":  36.0779
+    },
+    {
+        "pcode":  "ET9902",
+        "name":  "Area 2",
+        "adm1pcode":  "ET99",
+        "adm1name":  "Contested",
+        "lat":  13.6300,
+        "lon":  38.1623
+    },
+    {
+        "pcode":  "ET0302",
+        "name":  "South Gondar",
+        "adm1pcode":  "ET03",
+        "adm1name":  "Amhara",
+        "lat":  11.7570,
+        "lon":  38.0949
+    },
+    {
+        "pcode":  "ET0503",
+        "name":  "Jarar",
+        "adm1pcode":  "ET05",
+        "adm1name":  "Somali",
+        "lat":  8.1306,
+        "lon":  44.3148
+    },
+    {
+        "pcode":  "ET0308",
+        "name":  "Wag Hamra",
+        "adm1pcode":  "ET03",
+        "adm1name":  "Amhara",
+        "lat":  12.7212,
+        "lon":  38.8169
+    },
+    {
+        "pcode":  "ET1105",
+        "name":  "West Omo",
+        "adm1pcode":  "ET11",
+        "adm1name":  "South West Ethiopia",
+        "lat":  6.1458,
+        "lon":  35.5539
+    },
+    {
+        "pcode":  "ET0307",
+        "name":  "West Gojam",
+        "adm1pcode":  "ET03",
+        "adm1name":  "Amhara",
+        "lat":  10.6918,
+        "lon":  37.2117
+    },
+    {
+        "pcode":  "ET9901",
+        "name":  "Area 1",
+        "adm1pcode":  "ET99",
+        "adm1name":  "Contested",
+        "lat":  13.8291,
+        "lon":  37.0977
+    },
+    {
+        "pcode":  "ET0507",
+        "name":  "Doolo",
+        "adm1pcode":  "ET05",
+        "adm1name":  "Somali",
+        "lat":  7.2368,
+        "lon":  46.1139
+    },
+    {
+        "pcode":  "ET0107",
+        "name":  "Mekelle",
+        "adm1pcode":  "ET01",
+        "adm1name":  "Tigray",
+        "lat":  13.4756,
+        "lon":  39.5054
+    },
+    {
+        "pcode":  "ET0810",
+        "name":  "Burji",
+        "adm1pcode":  "ET08",
+        "adm1name":  "South Ethiopia",
+        "lat":  5.4815,
+        "lon":  37.7768
+    },
+    {
+        "pcode":  "ET0303",
+        "name":  "North Wello",
+        "adm1pcode":  "ET03",
+        "adm1name":  "Amhara",
+        "lat":  11.9081,
+        "lon":  39.2109
+    },
+    {
+        "pcode":  "ET0504",
+        "name":  "Erer",
+        "adm1pcode":  "ET05",
+        "adm1name":  "Somali",
+        "lat":  7.8748,
+        "lon":  42.2857
+    },
+    {
+        "pcode":  "ET1204",
+        "name":  "Itang Special",
+        "adm1pcode":  "ET12",
+        "adm1name":  "Gambela",
+        "lat":  8.3463,
+        "lon":  34.2196
+    },
+    {
+        "pcode":  "ET0310",
+        "name":  "Oromo Nationality Administration",
+        "adm1pcode":  "ET03",
+        "adm1name":  "Amhara",
+        "lat":  10.7411,
+        "lon":  40.0107
+    },
+    {
+        "pcode":  "ET0804",
+        "name":  "Basketo",
+        "adm1pcode":  "ET08",
+        "adm1name":  "South Ethiopia",
+        "lat":  6.2817,
+        "lon":  36.5598
+    },
+    {
+        "pcode":  "ET0301",
+        "name":  "North Gondar",
+        "adm1pcode":  "ET03",
+        "adm1name":  "Amhara",
+        "lat":  13.2286,
+        "lon":  38.0657
+    },
+    {
+        "pcode":  "ET1603",
+        "name":  "Central",
+        "adm1pcode":  "ET16",
+        "adm1name":  "Sidama",
+        "lat":  6.6999,
+        "lon":  38.3351
+    },
+    {
+        "pcode":  "ET1301",
+        "name":  "Harari",
+        "adm1pcode":  "ET13",
+        "adm1name":  "Harari",
+        "lat":  9.2897,
+        "lon":  42.1725
+    },
+    {
+        "pcode":  "ET0416",
+        "name":  "Buno Bedele",
+        "adm1pcode":  "ET04",
+        "adm1name":  "Oromia",
+        "lat":  8.4857,
+        "lon":  36.3271
+    },
+    {
+        "pcode":  "ET0413",
+        "name":  "South West Shewa",
+        "adm1pcode":  "ET04",
+        "adm1name":  "Oromia",
+        "lat":  8.5925,
+        "lon":  38.1723
+    },
+    {
+        "pcode":  "ET1502",
+        "name":  "Dire Dawa rural",
+        "adm1pcode":  "ET15",
+        "adm1name":  "Dire Dawa",
+        "lat":  9.6049,
+        "lon":  42.0163
+    },
+    {
+        "pcode":  "ET0102",
+        "name":  "Central",
+        "adm1pcode":  "ET01",
+        "adm1name":  "Tigray",
+        "lat":  13.9703,
+        "lon":  38.8915
+    },
+    {
+        "pcode":  "ET0406",
+        "name":  "North Shewa (OR)",
+        "adm1pcode":  "ET04",
+        "adm1name":  "Oromia",
+        "lat":  9.6924,
+        "lon":  38.7167
+    },
+    {
+        "pcode":  "ET0806",
+        "name":  "Alle Special",
+        "adm1pcode":  "ET08",
+        "adm1name":  "South Ethiopia",
+        "lat":  5.5682,
+        "lon":  37.1617
+    },
+    {
+        "pcode":  "ET0202",
+        "name":  "Kilbati /Zone 2",
+        "adm1pcode":  "ET02",
+        "adm1name":  "Afar",
+        "lat":  13.4507,
+        "lon":  40.6493
+    },
+    {
+        "pcode":  "ET0420",
+        "name":  "Shager City",
+        "adm1pcode":  "ET04",
+        "adm1name":  "Oromia",
+        "lat":  8.9935,
+        "lon":  38.7585
+    },
+    {
+        "pcode":  "ET0811",
+        "name":  "Gedeo",
+        "adm1pcode":  "ET08",
+        "adm1name":  "South Ethiopia",
+        "lat":  6.1437,
+        "lon":  38.2724
+    },
+    {
+        "pcode":  "ET1101",
+        "name":  "Sheka",
+        "adm1pcode":  "ET11",
+        "adm1name":  "South West Ethiopia",
+        "lat":  7.5376,
+        "lon":  35.4127
+    },
+    {
+        "pcode":  "ET1104",
+        "name":  "Dawuro",
+        "adm1pcode":  "ET11",
+        "adm1name":  "South West Ethiopia",
+        "lat":  6.9712,
+        "lon":  37.0997
+    },
+    {
+        "pcode":  "ET0602",
+        "name":  "Metekel",
+        "adm1pcode":  "ET06",
+        "adm1name":  "Benishangul-Gumuz",
+        "lat":  11.0016,
+        "lon":  35.7693
+    },
+    {
+        "pcode":  "ET0704",
+        "name":  "East Guraghe",
+        "adm1pcode":  "ET07",
+        "adm1name":  "Central Ethiopia",
+        "lat":  8.2307,
+        "lon":  38.4931
+    },
+    {
+        "pcode":  "ET1203",
+        "name":  "Majang",
+        "adm1pcode":  "ET12",
+        "adm1name":  "Gambela",
+        "lat":  7.3833,
+        "lon":  35.1294
+    },
+    {
+        "pcode":  "ET0812",
+        "name":  "South Omo",
+        "adm1pcode":  "ET08",
+        "adm1name":  "South Ethiopia",
+        "lat":  5.3193,
+        "lon":  36.3609
+    },
+    {
+        "pcode":  "ET1604",
+        "name":  "Southern",
+        "adm1pcode":  "ET16",
+        "adm1name":  "Sidama",
+        "lat":  6.5432,
+        "lon":  38.4526
+    },
+    {
+        "pcode":  "ET0509",
+        "name":  "Liban",
+        "adm1pcode":  "ET05",
+        "adm1name":  "Somali",
+        "lat":  5.1077,
+        "lon":  41.0132
+    },
+    {
+        "pcode":  "ET0418",
+        "name":  "Kelem Wellega",
+        "adm1pcode":  "ET04",
+        "adm1name":  "Oromia",
+        "lat":  8.8127,
+        "lon":  34.7825
+    },
+    {
+        "pcode":  "ET0415",
+        "name":  "West Guji",
+        "adm1pcode":  "ET04",
+        "adm1name":  "Oromia",
+        "lat":  5.7433,
+        "lon":  38.2727
+    },
+    {
+        "pcode":  "ET0422",
+        "name":  "East Borena",
+        "adm1pcode":  "ET04",
+        "adm1name":  "Oromia",
+        "lat":  5.0945,
+        "lon":  39.4395
+    },
+    {
+        "pcode":  "ET0506",
+        "name":  "Shabelle",
+        "adm1pcode":  "ET05",
+        "adm1name":  "Somali",
+        "lat":  5.8007,
+        "lon":  43.6669
+    },
+    {
+        "pcode":  "ET0421",
+        "name":  "East Bale",
+        "adm1pcode":  "ET04",
+        "adm1name":  "Oromia",
+        "lat":  7.2371,
+        "lon":  41.2571
+    },
+    {
+        "pcode":  "ET0510",
+        "name":  "Nogob",
+        "adm1pcode":  "ET05",
+        "adm1name":  "Somali",
+        "lat":  7.1329,
+        "lon":  42.9851
+    },
+    {
+        "pcode":  "ET0808",
+        "name":  "Kore",
+        "adm1pcode":  "ET08",
+        "adm1name":  "South Ethiopia",
+        "lat":  5.7876,
+        "lon":  37.8152
+    },
+    {
+        "pcode":  "ET0805",
+        "name":  "Ari",
+        "adm1pcode":  "ET08",
+        "adm1name":  "South Ethiopia",
+        "lat":  5.9315,
+        "lon":  36.5266
+    },
+    {
+        "pcode":  "ET0205",
+        "name":  "Hari /Zone 5",
+        "adm1pcode":  "ET02",
+        "adm1name":  "Afar",
+        "lat":  10.4134,
+        "lon":  40.2685
+    },
+    {
+        "pcode":  "ET0313",
+        "name":  "North Gojam",
+        "adm1pcode":  "ET03",
+        "adm1name":  "Amhara",
+        "lat":  11.4735,
+        "lon":  37.2111
+    },
+    {
+        "pcode":  "ET0802",
+        "name":  "Gamo",
+        "adm1pcode":  "ET08",
+        "adm1name":  "South Ethiopia",
+        "lat":  6.1895,
+        "lon":  37.4290
+    },
+    {
+        "pcode":  "ET0724",
+        "name":  "Yem",
+        "adm1pcode":  "ET07",
+        "adm1name":  "Central Ethiopia",
+        "lat":  7.8125,
+        "lon":  37.4884
+    },
+    {
+        "pcode":  "ET0501",
+        "name":  "Siti",
+        "adm1pcode":  "ET05",
+        "adm1name":  "Somali",
+        "lat":  10.2501,
+        "lon":  41.8336
+    },
+    {
+        "pcode":  "ET0402",
+        "name":  "East Wellega",
+        "adm1pcode":  "ET04",
+        "adm1name":  "Oromia",
+        "lat":  9.4048,
+        "lon":  36.6168
+    },
+    {
+        "pcode":  "ET0101",
+        "name":  "North Western",
+        "adm1pcode":  "ET01",
+        "adm1name":  "Tigray",
+        "lat":  14.2346,
+        "lon":  38.0160
+    },
+    {
+        "pcode":  "ET0407",
+        "name":  "East Shewa",
+        "adm1pcode":  "ET04",
+        "adm1name":  "Oromia",
+        "lat":  8.5016,
+        "lon":  39.1569
+    },
+    {
+        "pcode":  "ET0206",
+        "name":  "Mahi /Zone 6",
+        "adm1pcode":  "ET02",
+        "adm1name":  "Afar",
+        "lat":  10.8799,
+        "lon":  40.9464
+    },
+    {
+        "pcode":  "ET0401",
+        "name":  "West Wellega",
+        "adm1pcode":  "ET04",
+        "adm1name":  "Oromia",
+        "lat":  9.3344,
+        "lon":  35.3022
+    },
+    {
+        "pcode":  "ET0203",
+        "name":  "Gabi /Zone 3",
+        "adm1pcode":  "ET02",
+        "adm1name":  "Afar",
+        "lat":  9.6585,
+        "lon":  40.3955
+    },
+    {
+        "pcode":  "ET0408",
+        "name":  "Arsi",
+        "adm1pcode":  "ET04",
+        "adm1name":  "Oromia",
+        "lat":  7.9372,
+        "lon":  39.6820
+    },
+    {
+        "pcode":  "ET0305",
+        "name":  "North Shewa (AM)",
+        "adm1pcode":  "ET03",
+        "adm1name":  "Amhara",
+        "lat":  9.8034,
+        "lon":  39.4871
+    },
+    {
+        "pcode":  "ET0502",
+        "name":  "Fafan",
+        "adm1pcode":  "ET05",
+        "adm1name":  "Somali",
+        "lat":  9.1384,
+        "lon":  43.2175
+    },
+    {
+        "pcode":  "ET1103",
+        "name":  "Bench Sheko",
+        "adm1pcode":  "ET11",
+        "adm1name":  "South West Ethiopia",
+        "lat":  6.9282,
+        "lon":  35.3632
+    },
+    {
+        "pcode":  "ET0306",
+        "name":  "East Gojam",
+        "adm1pcode":  "ET03",
+        "adm1name":  "Amhara",
+        "lat":  10.5060,
+        "lon":  37.9312
+    },
+    {
+        "pcode":  "ET1600",
+        "name":  "Sidama",
+        "adm1pcode":  "ET16",
+        "adm1name":  "Sidama",
+        "lat":  6.7285,
+        "lon":  38.5285,
+        "note":  "derived: mean of Sidama zones"
+    },
+    {
+        "pcode":  "ET1201",
+        "name":  "Nuwer",
+        "adm1pcode":  "ET12",
+        "adm1name":  "Gambela",
+        "lat":  8.1562,
+        "lon":  33.4509
+    },
+    {
+        "pcode":  "ET0726",
+        "name":  "Tembaro Special",
+        "adm1pcode":  "ET07",
+        "adm1name":  "Central Ethiopia",
+        "lat":  7.2727,
+        "lon":  37.4896
+    },
+    {
+        "pcode":  "ET0700",
+        "name":  "Kebena Special",
+        "adm1pcode":  "ET07",
+        "adm1name":  "Central Ethiopia",
+        "lat":  8.3223,
+        "lon":  37.9087
+    },
+    {
+        "pcode":  "ET1602",
+        "name":  "Northern",
+        "adm1pcode":  "ET16",
+        "adm1name":  "Sidama",
+        "lat":  6.9543,
+        "lon":  38.4407
+    },
+    {
+        "pcode":  "ET0419",
+        "name":  "Horo Gudru Wellega",
+        "adm1pcode":  "ET04",
+        "adm1name":  "Oromia",
+        "lat":  9.7098,
+        "lon":  37.1972
+    },
+    {
+        "pcode":  "ET0714",
+        "name":  "Halaba",
+        "adm1pcode":  "ET07",
+        "adm1name":  "Central Ethiopia",
+        "lat":  7.4289,
+        "lon":  38.2209
+    },
+    {
+        "pcode":  "ET0604",
+        "name":  "Kamashi",
+        "adm1pcode":  "ET06",
+        "adm1name":  "Benishangul-Gumuz",
+        "lat":  9.9190,
+        "lon":  35.7980
+    },
+    {
+        "pcode":  "ET0105",
+        "name":  "Western",
+        "adm1pcode":  "ET01",
+        "adm1name":  "Tigray",
+        "lat":  13.7,
+        "lon":  36.75,
+        "note":  "manual: Western Tigray (not in COD vintage)"
+    },
+    {
+        "pcode":  "ET0801",
+        "name":  "Wolayita",
+        "adm1pcode":  "ET08",
+        "adm1name":  "South Ethiopia",
+        "lat":  6.8626,
+        "lon":  37.7237
+    },
+    {
+        "pcode":  "ET0725",
+        "name":  "Mareko Special",
+        "adm1pcode":  "ET07",
+        "adm1name":  "Central Ethiopia",
+        "lat":  7.9947,
+        "lon":  38.5325
+    },
+    {
+        "pcode":  "ET0701",
+        "name":  "Guraghe",
+        "adm1pcode":  "ET07",
+        "adm1name":  "Central Ethiopia",
+        "lat":  8.1325,
+        "lon":  37.9016
+    },
+    {
+        "pcode":  "ET0314",
+        "name":  "Bahir Dar town Admin",
+        "adm1pcode":  "ET03",
+        "adm1name":  "Amhara",
+        "lat":  11.7946,
+        "lon":  37.3440
+    },
+    {
+        "pcode":  "ET0312",
+        "name":  "West Gondar",
+        "adm1pcode":  "ET03",
+        "adm1name":  "Amhara",
+        "lat":  12.5453,
+        "lon":  36.1740
+    },
+    {
+        "pcode":  "ET0417",
+        "name":  "West Arsi",
+        "adm1pcode":  "ET04",
+        "adm1name":  "Oromia",
+        "lat":  7.0587,
+        "lon":  38.9801
+    },
+    {
+        "pcode":  "ET0311",
+        "name":  "Central Gondar",
+        "adm1pcode":  "ET03",
+        "adm1name":  "Amhara",
+        "lat":  12.5943,
+        "lon":  37.3287
+    },
+    {
+        "pcode":  "ET0204",
+        "name":  "Fanti /Zone 4",
+        "adm1pcode":  "ET02",
+        "adm1name":  "Afar",
+        "lat":  12.3270,
+        "lon":  40.3177
+    },
+    {
+        "pcode":  "ET0403",
+        "name":  "Ilu Aba Bora",
+        "adm1pcode":  "ET04",
+        "adm1name":  "Oromia",
+        "lat":  8.2639,
+        "lon":  35.4813
+    },
+    {
+        "pcode":  "ET0201",
+        "name":  "Awsi /Zone 1",
+        "adm1pcode":  "ET02",
+        "adm1name":  "Afar",
+        "lat":  11.9341,
+        "lon":  41.2403
+    },
+    {
+        "pcode":  "ET1605",
+        "name":  "Eastern",
+        "adm1pcode":  "ET16",
+        "adm1name":  "Sidama",
+        "lat":  6.4284,
+        "lon":  38.9234
+    },
+    {
+        "pcode":  "ET0807",
+        "name":  "Derashe",
+        "adm1pcode":  "ET08",
+        "adm1name":  "South Ethiopia",
+        "lat":  5.6528,
+        "lon":  37.3774
+    },
+    {
+        "pcode":  "ET0702",
+        "name":  "Hadiya",
+        "adm1pcode":  "ET07",
+        "adm1name":  "Central Ethiopia",
+        "lat":  7.5140,
+        "lon":  37.7573
+    },
+    {
+        "pcode":  "ET0404",
+        "name":  "Jimma",
+        "adm1pcode":  "ET04",
+        "adm1name":  "Oromia",
+        "lat":  7.9197,
+        "lon":  36.8302
+    },
+    {
+        "pcode":  "ET0603",
+        "name":  "Assosa",
+        "adm1pcode":  "ET06",
+        "adm1name":  "Benishangul-Gumuz",
+        "lat":  10.2252,
+        "lon":  34.7122
+    },
+    {
+        "pcode":  "ET1202",
+        "name":  "Agnewak",
+        "adm1pcode":  "ET12",
+        "adm1name":  "Gambela",
+        "lat":  7.5477,
+        "lon":  34.4552
+    },
+    {
+        "pcode":  "ET0304",
+        "name":  "South Wello",
+        "adm1pcode":  "ET03",
+        "adm1name":  "Amhara",
+        "lat":  10.9971,
+        "lon":  39.2081
+    },
+    {
+        "pcode":  "ET0106",
+        "name":  "South Eastern",
+        "adm1pcode":  "ET01",
+        "adm1name":  "Tigray",
+        "lat":  13.2961,
+        "lon":  39.4111
+    },
+    {
+        "pcode":  "ET0409",
+        "name":  "West Hararge",
+        "adm1pcode":  "ET04",
+        "adm1name":  "Oromia",
+        "lat":  8.6703,
+        "lon":  40.7732
+    },
+    {
+        "pcode":  "ET0410",
+        "name":  "East Hararge",
+        "adm1pcode":  "ET04",
+        "adm1name":  "Oromia",
+        "lat":  8.8444,
+        "lon":  42.0028
+    },
+    {
+        "pcode":  "ET0412",
+        "name":  "Borena",
+        "adm1pcode":  "ET04",
+        "adm1name":  "Oromia",
+        "lat":  4.4281,
+        "lon":  37.9816
+    },
+    {
+        "pcode":  "ET0605",
+        "name":  "Mao-komo Special",
+        "adm1pcode":  "ET06",
+        "adm1name":  "Benishangul-Gumuz",
+        "lat":  9.3562,
+        "lon":  34.2856
+    },
+    {
+        "pcode":  "ET0405",
+        "name":  "West Shewa",
+        "adm1pcode":  "ET04",
+        "adm1name":  "Oromia",
+        "lat":  9.1708,
+        "lon":  37.8420
+    },
+    {
+        "pcode":  "ET1601",
+        "name":  "Hawassa town Admin",
+        "adm1pcode":  "ET16",
+        "adm1name":  "Sidama",
+        "lat":  7.0168,
+        "lon":  38.4909
+    },
+    {
+        "pcode":  "ET0505",
+        "name":  "Korahe",
+        "adm1pcode":  "ET05",
+        "adm1name":  "Somali",
+        "lat":  6.4468,
+        "lon":  44.6448
+    },
+    {
+        "pcode":  "ET1106",
+        "name":  "Konta",
+        "adm1pcode":  "ET11",
+        "adm1name":  "South West Ethiopia",
+        "lat":  6.8711,
+        "lon":  36.6087
+    },
+    {
+        "pcode":  "ET0508",
+        "name":  "Afder",
+        "adm1pcode":  "ET05",
+        "adm1name":  "Somali",
+        "lat":  5.3217,
+        "lon":  42.2981
+    },
+    {
+        "pcode":  "ET0720",
+        "name":  "Siltie",
+        "adm1pcode":  "ET07",
+        "adm1name":  "Central Ethiopia",
+        "lat":  7.8084,
+        "lon":  38.2260
+    },
+    {
+        "pcode":  "ET0703",
+        "name":  "Kembata",
+        "adm1pcode":  "ET07",
+        "adm1name":  "Central Ethiopia",
+        "lat":  7.2937,
+        "lon":  37.8302
+    },
+    {
+        "pcode":  "ET0809",
+        "name":  "Konso",
+        "adm1pcode":  "ET08",
+        "adm1name":  "South Ethiopia",
+        "lat":  5.3548,
+        "lon":  37.3693
+    },
+    {
+        "pcode":  "ET0411",
+        "name":  "Bale",
+        "adm1pcode":  "ET04",
+        "adm1name":  "Oromia",
+        "lat":  6.6089,
+        "lon":  40.1486
+    },
+    {
+        "pcode":  "ET1401",
+        "name":  "Region 14",
+        "adm1pcode":  "ET14",
+        "adm1name":  "Addis Ababa",
+        "lat":  8.9805,
+        "lon":  38.7855
+    },
+    {
+        "pcode":  "ET0803",
+        "name":  "Gofa",
+        "adm1pcode":  "ET08",
+        "adm1name":  "South Ethiopia",
+        "lat":  6.3680,
+        "lon":  36.8579
+    },
+    {
+        "pcode":  "ET0414",
+        "name":  "Guji",
+        "adm1pcode":  "ET04",
+        "adm1name":  "Oromia",
+        "lat":  5.8328,
+        "lon":  38.9343
+    }
+]

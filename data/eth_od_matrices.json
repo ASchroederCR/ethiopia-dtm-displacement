@@ -1,0 +1,965 @@
+﻿{
+    "meta":  {
+                 "country":  "Ethiopia",
+                 "source":  "IOM DTM API v3 (displacement/admin2)",
+                 "operation":  "Countrywide monitoring",
+                 "method":  "Year-end snapshot (latest reporting round per year); Admin1 origin -\u003e Admin1 current location; metric = present IDP individuals",
+                 "generated":  "2026-07-08",
+                 "years":  [
+                               2020,
+                               2021,
+                               2022,
+                               2023,
+                               2024
+                           ]
+             },
+    "yearMeta":  [
+                     {
+                         "year":  2020,
+                         "round":  "23",
+                         "snapshotDate":  "2020-09-30",
+                         "totalIdp":  1846551,
+                         "idpUnknownOrigin":  107769,
+                         "sites":  140
+                     },
+                     {
+                         "year":  2021,
+                         "round":  "27",
+                         "snapshotDate":  "2021-09-30",
+                         "totalIdp":  2124983,
+                         "idpUnknownOrigin":  177444,
+                         "sites":  136
+                     },
+                     {
+                         "year":  2022,
+                         "round":  "31",
+                         "snapshotDate":  "2022-09-30",
+                         "totalIdp":  2727733,
+                         "idpUnknownOrigin":  167650,
+                         "sites":  169
+                     },
+                     {
+                         "year":  2023,
+                         "round":  "35",
+                         "snapshotDate":  "2023-12-31",
+                         "totalIdp":  3194413,
+                         "idpUnknownOrigin":  848,
+                         "sites":  234
+                     },
+                     {
+                         "year":  2024,
+                         "round":  "37",
+                         "snapshotDate":  "2024-08-31",
+                         "totalIdp":  1919993,
+                         "idpUnknownOrigin":  13181,
+                         "sites":  154
+                     }
+                 ],
+    "regions":  [
+                    "Addis Ababa",
+                    "Afar",
+                    "Amhara",
+                    "Benishangul-Gumuz",
+                    "Central Ethiopia",
+                    "Contested",
+                    "Dire Dawa",
+                    "Gambela",
+                    "Harari",
+                    "Oromia",
+                    "Sidama",
+                    "Somali",
+                    "South Ethiopia",
+                    "South West Ethiopia",
+                    "Tigray"
+                ],
+    "origins":  [
+                    "Addis Ababa",
+                    "Afar",
+                    "Amhara",
+                    "Benishangul-Gumuz",
+                    "Central Ethiopia",
+                    "Gambela",
+                    "Harari",
+                    "Oromia",
+                    "Sidama",
+                    "Somali",
+                    "South Ethiopia",
+                    "South West Ethiopia",
+                    "Tigray"
+                ],
+    "destinations":  [
+                         "Afar",
+                         "Amhara",
+                         "Benishangul-Gumuz",
+                         "Central Ethiopia",
+                         "Contested",
+                         "Dire Dawa",
+                         "Gambela",
+                         "Harari",
+                         "Oromia",
+                         "Sidama",
+                         "Somali",
+                         "South Ethiopia",
+                         "South West Ethiopia",
+                         "Tigray"
+                     ],
+    "centroids":  {
+                      "Somali":  {
+                                     "lat":  6.8,
+                                     "lon":  44.3
+                                 },
+                      "Dire Dawa":  {
+                                        "lat":  9.6,
+                                        "lon":  41.87
+                                    },
+                      "Benishangul-Gumuz":  {
+                                                "lat":  10.6,
+                                                "lon":  35.3
+                                            },
+                      "South West Ethiopia":  {
+                                                  "lat":  7.05,
+                                                  "lon":  35.65
+                                              },
+                      "Sidama":  {
+                                     "lat":  6.9,
+                                     "lon":  38.48
+                                 },
+                      "Amhara":  {
+                                     "lat":  11.5,
+                                     "lon":  38.2
+                                 },
+                      "Central Ethiopia":  {
+                                               "lat":  7.7,
+                                               "lon":  37.95
+                                           },
+                      "South Ethiopia":  {
+                                             "lat":  5.8,
+                                             "lon":  37.1
+                                         },
+                      "Contested":  {
+                                        "lat":  13.6,
+                                        "lon":  36.8
+                                    },
+                      "Harari":  {
+                                     "lat":  9.31,
+                                     "lon":  42.12
+                                 },
+                      "Tigray":  {
+                                     "lat":  13.6,
+                                     "lon":  39.3
+                                 },
+                      "Oromia":  {
+                                     "lat":  8,
+                                     "lon":  39.3
+                                 },
+                      "Afar":  {
+                                   "lat":  11.75,
+                                   "lon":  40.95
+                               },
+                      "Addis Ababa":  {
+                                          "lat":  9.03,
+                                          "lon":  38.74
+                                      },
+                      "Gambela":  {
+                                      "lat":  8.05,
+                                      "lon":  34.45
+                                  }
+                  },
+    "matrices":  {
+                     "2023":  [
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "South West Ethiopia",
+                                      "v":  1572
+                                  },
+                                  {
+                                      "o":  "Amhara",
+                                      "d":  "Benishangul-Gumuz",
+                                      "v":  119
+                                  },
+                                  {
+                                      "o":  "Benishangul-Gumuz",
+                                      "d":  "Amhara",
+                                      "v":  930
+                                  },
+                                  {
+                                      "o":  "Benishangul-Gumuz",
+                                      "d":  "Central Ethiopia",
+                                      "v":  131
+                                  },
+                                  {
+                                      "o":  "Somali",
+                                      "d":  "Amhara",
+                                      "v":  73
+                                  },
+                                  {
+                                      "o":  "Somali",
+                                      "d":  "Harari",
+                                      "v":  1969
+                                  },
+                                  {
+                                      "o":  "Sidama",
+                                      "d":  "Oromia",
+                                      "v":  92
+                                  },
+                                  {
+                                      "o":  "Tigray",
+                                      "d":  "Tigray",
+                                      "v":  797580
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "Somali",
+                                      "v":  386998
+                                  },
+                                  {
+                                      "o":  "Somali",
+                                      "d":  "Somali",
+                                      "v":  697523
+                                  },
+                                  {
+                                      "o":  "Amhara",
+                                      "d":  "Amhara",
+                                      "v":  37959
+                                  },
+                                  {
+                                      "o":  "Afar",
+                                      "d":  "Amhara",
+                                      "v":  1910
+                                  },
+                                  {
+                                      "o":  "Afar",
+                                      "d":  "Afar",
+                                      "v":  61905
+                                  },
+                                  {
+                                      "o":  "Somali",
+                                      "d":  "Central Ethiopia",
+                                      "v":  4889
+                                  },
+                                  {
+                                      "o":  "Central Ethiopia",
+                                      "d":  "Central Ethiopia",
+                                      "v":  5426
+                                  },
+                                  {
+                                      "o":  "Sidama",
+                                      "d":  "Sidama",
+                                      "v":  28312
+                                  },
+                                  {
+                                      "o":  "Harari",
+                                      "d":  "Harari",
+                                      "v":  251
+                                  },
+                                  {
+                                      "o":  "South West Ethiopia",
+                                      "d":  "Amhara",
+                                      "v":  197
+                                  },
+                                  {
+                                      "o":  "Amhara",
+                                      "d":  "Tigray",
+                                      "v":  5508
+                                  },
+                                  {
+                                      "o":  "South West Ethiopia",
+                                      "d":  "Sidama",
+                                      "v":  4099
+                                  },
+                                  {
+                                      "o":  "Somali",
+                                      "d":  "Oromia",
+                                      "v":  135749
+                                  },
+                                  {
+                                      "o":  "Addis Ababa",
+                                      "d":  "Tigray",
+                                      "v":  50
+                                  },
+                                  {
+                                      "o":  "Tigray",
+                                      "d":  "Amhara",
+                                      "v":  17082
+                                  },
+                                  {
+                                      "o":  "Afar",
+                                      "d":  "Tigray",
+                                      "v":  31225
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "Oromia",
+                                      "v":  669341
+                                  },
+                                  {
+                                      "o":  "Afar",
+                                      "d":  "Somali",
+                                      "v":  5262
+                                  },
+                                  {
+                                      "o":  "Benishangul-Gumuz",
+                                      "d":  "Benishangul-Gumuz",
+                                      "v":  55011
+                                  },
+                                  {
+                                      "o":  "Benishangul-Gumuz",
+                                      "d":  "Tigray",
+                                      "v":  227
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "Benishangul-Gumuz",
+                                      "v":  19567
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "Sidama",
+                                      "v":  3908
+                                  },
+                                  {
+                                      "o":  "Amhara",
+                                      "d":  "Central Ethiopia",
+                                      "v":  128
+                                  },
+                                  {
+                                      "o":  "Benishangul-Gumuz",
+                                      "d":  "Oromia",
+                                      "v":  57044
+                                  },
+                                  {
+                                      "o":  "Gambela",
+                                      "d":  "Gambela",
+                                      "v":  28539
+                                  },
+                                  {
+                                      "o":  "South West Ethiopia",
+                                      "d":  "Tigray",
+                                      "v":  1049
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "Amhara",
+                                      "v":  85046
+                                  },
+                                  {
+                                      "o":  "South West Ethiopia",
+                                      "d":  "South West Ethiopia",
+                                      "v":  5319
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "Tigray",
+                                      "v":  5176
+                                  },
+                                  {
+                                      "o":  "South West Ethiopia",
+                                      "d":  "Central Ethiopia",
+                                      "v":  24691
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "Central Ethiopia",
+                                      "v":  11708
+                                  }
+                              ],
+                     "2021":  [
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "Amhara",
+                                      "v":  177552
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "South Ethiopia",
+                                      "v":  2109
+                                  },
+                                  {
+                                      "o":  "Afar",
+                                      "d":  "Afar",
+                                      "v":  106440
+                                  },
+                                  {
+                                      "o":  "Gambela",
+                                      "d":  "Gambela",
+                                      "v":  34321
+                                  },
+                                  {
+                                      "o":  "Somali",
+                                      "d":  "Harari",
+                                      "v":  2799
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "Dire Dawa",
+                                      "v":  2491
+                                  },
+                                  {
+                                      "o":  "Benishangul-Gumuz",
+                                      "d":  "Amhara",
+                                      "v":  144854
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "Oromia",
+                                      "v":  229622
+                                  },
+                                  {
+                                      "o":  "Central Ethiopia",
+                                      "d":  "Central Ethiopia",
+                                      "v":  18961
+                                  },
+                                  {
+                                      "o":  "Somali",
+                                      "d":  "Somali",
+                                      "v":  478583
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "Somali",
+                                      "v":  392593
+                                  },
+                                  {
+                                      "o":  "Afar",
+                                      "d":  "Amhara",
+                                      "v":  888
+                                  },
+                                  {
+                                      "o":  "Harari",
+                                      "d":  "Harari",
+                                      "v":  326
+                                  },
+                                  {
+                                      "o":  "Amhara",
+                                      "d":  "Amhara",
+                                      "v":  62501
+                                  },
+                                  {
+                                      "o":  "Afar",
+                                      "d":  "Sidama",
+                                      "v":  4145
+                                  },
+                                  {
+                                      "o":  "Somali",
+                                      "d":  "Central Ethiopia",
+                                      "v":  2623
+                                  },
+                                  {
+                                      "o":  "Benishangul-Gumuz",
+                                      "d":  "Oromia",
+                                      "v":  58355
+                                  },
+                                  {
+                                      "o":  "Afar",
+                                      "d":  "South Ethiopia",
+                                      "v":  2614
+                                  },
+                                  {
+                                      "o":  "Somali",
+                                      "d":  "Oromia",
+                                      "v":  218156
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "Central Ethiopia",
+                                      "v":  7606
+                                  }
+                              ],
+                     "2024":  [
+                                  {
+                                      "o":  "Tigray",
+                                      "d":  "Sidama",
+                                      "v":  528
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "South West Ethiopia",
+                                      "v":  1502
+                                  },
+                                  {
+                                      "o":  "Tigray",
+                                      "d":  "Contested",
+                                      "v":  8313
+                                  },
+                                  {
+                                      "o":  "Benishangul-Gumuz",
+                                      "d":  "Amhara",
+                                      "v":  545
+                                  },
+                                  {
+                                      "o":  "Sidama",
+                                      "d":  "Sidama",
+                                      "v":  28208
+                                  },
+                                  {
+                                      "o":  "Somali",
+                                      "d":  "Harari",
+                                      "v":  775
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "Sidama",
+                                      "v":  6020
+                                  },
+                                  {
+                                      "o":  "Sidama",
+                                      "d":  "Oromia",
+                                      "v":  94
+                                  },
+                                  {
+                                      "o":  "Tigray",
+                                      "d":  "Tigray",
+                                      "v":  706966
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "Contested",
+                                      "v":  152
+                                  },
+                                  {
+                                      "o":  "Amhara",
+                                      "d":  "Amhara",
+                                      "v":  36254
+                                  },
+                                  {
+                                      "o":  "Afar",
+                                      "d":  "Amhara",
+                                      "v":  1679
+                                  },
+                                  {
+                                      "o":  "Afar",
+                                      "d":  "Afar",
+                                      "v":  123767
+                                  },
+                                  {
+                                      "o":  "Somali",
+                                      "d":  "Central Ethiopia",
+                                      "v":  5476
+                                  },
+                                  {
+                                      "o":  "Benishangul-Gumuz",
+                                      "d":  "Oromia",
+                                      "v":  50393
+                                  },
+                                  {
+                                      "o":  "South West Ethiopia",
+                                      "d":  "Amhara",
+                                      "v":  314
+                                  },
+                                  {
+                                      "o":  "Amhara",
+                                      "d":  "Tigray",
+                                      "v":  8156
+                                  },
+                                  {
+                                      "o":  "Somali",
+                                      "d":  "Oromia",
+                                      "v":  128262
+                                  },
+                                  {
+                                      "o":  "Addis Ababa",
+                                      "d":  "Tigray",
+                                      "v":  39
+                                  },
+                                  {
+                                      "o":  "Tigray",
+                                      "d":  "Amhara",
+                                      "v":  41416
+                                  },
+                                  {
+                                      "o":  "Afar",
+                                      "d":  "Tigray",
+                                      "v":  25614
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "Oromia",
+                                      "v":  570417
+                                  },
+                                  {
+                                      "o":  "Afar",
+                                      "d":  "Contested",
+                                      "v":  851
+                                  },
+                                  {
+                                      "o":  "Amhara",
+                                      "d":  "Contested",
+                                      "v":  1352
+                                  },
+                                  {
+                                      "o":  "Central Ethiopia",
+                                      "d":  "Central Ethiopia",
+                                      "v":  13006
+                                  },
+                                  {
+                                      "o":  "Amhara",
+                                      "d":  "Central Ethiopia",
+                                      "v":  132
+                                  },
+                                  {
+                                      "o":  "South West Ethiopia",
+                                      "d":  "Sidama",
+                                      "v":  4177
+                                  },
+                                  {
+                                      "o":  "Gambela",
+                                      "d":  "Gambela",
+                                      "v":  16243
+                                  },
+                                  {
+                                      "o":  "South Ethiopia",
+                                      "d":  "Central Ethiopia",
+                                      "v":  733
+                                  },
+                                  {
+                                      "o":  "South Ethiopia",
+                                      "d":  "Sidama",
+                                      "v":  132
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "Amhara",
+                                      "v":  77695
+                                  },
+                                  {
+                                      "o":  "South West Ethiopia",
+                                      "d":  "South West Ethiopia",
+                                      "v":  4721
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "Tigray",
+                                      "v":  7649
+                                  },
+                                  {
+                                      "o":  "South West Ethiopia",
+                                      "d":  "Central Ethiopia",
+                                      "v":  24397
+                                  },
+                                  {
+                                      "o":  "Addis Ababa",
+                                      "d":  "Amhara",
+                                      "v":  930
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "Central Ethiopia",
+                                      "v":  9904
+                                  }
+                              ],
+                     "2020":  [
+                                  {
+                                      "o":  "Amhara",
+                                      "d":  "Tigray",
+                                      "v":  29873
+                                  },
+                                  {
+                                      "o":  "Amhara",
+                                      "d":  "Benishangul-Gumuz",
+                                      "v":  389
+                                  },
+                                  {
+                                      "o":  "Benishangul-Gumuz",
+                                      "d":  "Amhara",
+                                      "v":  2431
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "South Ethiopia",
+                                      "v":  779
+                                  },
+                                  {
+                                      "o":  "Somali",
+                                      "d":  "Amhara",
+                                      "v":  269
+                                  },
+                                  {
+                                      "o":  "Somali",
+                                      "d":  "Harari",
+                                      "v":  2665
+                                  },
+                                  {
+                                      "o":  "Central Ethiopia",
+                                      "d":  "Oromia",
+                                      "v":  10835
+                                  },
+                                  {
+                                      "o":  "Somali",
+                                      "d":  "Tigray",
+                                      "v":  1553
+                                  },
+                                  {
+                                      "o":  "Tigray",
+                                      "d":  "Tigray",
+                                      "v":  6848
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "Somali",
+                                      "v":  463478
+                                  },
+                                  {
+                                      "o":  "Somali",
+                                      "d":  "Somali",
+                                      "v":  310496
+                                  },
+                                  {
+                                      "o":  "Amhara",
+                                      "d":  "Amhara",
+                                      "v":  12166
+                                  },
+                                  {
+                                      "o":  "Afar",
+                                      "d":  "Afar",
+                                      "v":  148051
+                                  },
+                                  {
+                                      "o":  "Central Ethiopia",
+                                      "d":  "Amhara",
+                                      "v":  404
+                                  },
+                                  {
+                                      "o":  "Central Ethiopia",
+                                      "d":  "Tigray",
+                                      "v":  39529
+                                  },
+                                  {
+                                      "o":  "Somali",
+                                      "d":  "Oromia",
+                                      "v":  79165
+                                  },
+                                  {
+                                      "o":  "Central Ethiopia",
+                                      "d":  "Sidama",
+                                      "v":  30517
+                                  },
+                                  {
+                                      "o":  "Tigray",
+                                      "d":  "Amhara",
+                                      "v":  982
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "Dire Dawa",
+                                      "v":  4875
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "Oromia",
+                                      "v":  458961
+                                  },
+                                  {
+                                      "o":  "Benishangul-Gumuz",
+                                      "d":  "Benishangul-Gumuz",
+                                      "v":  7493
+                                  },
+                                  {
+                                      "o":  "Somali",
+                                      "d":  "Central Ethiopia",
+                                      "v":  586
+                                  },
+                                  {
+                                      "o":  "Benishangul-Gumuz",
+                                      "d":  "Tigray",
+                                      "v":  86
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "Benishangul-Gumuz",
+                                      "v":  430
+                                  },
+                                  {
+                                      "o":  "Central Ethiopia",
+                                      "d":  "Central Ethiopia",
+                                      "v":  12608
+                                  },
+                                  {
+                                      "o":  "Benishangul-Gumuz",
+                                      "d":  "Oromia",
+                                      "v":  41272
+                                  },
+                                  {
+                                      "o":  "Gambela",
+                                      "d":  "Gambela",
+                                      "v":  36719
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "Amhara",
+                                      "v":  6811
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "Tigray",
+                                      "v":  22692
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "Central Ethiopia",
+                                      "v":  5819
+                                  }
+                              ],
+                     "2022":  [
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "South West Ethiopia",
+                                      "v":  526
+                                  },
+                                  {
+                                      "o":  "Benishangul-Gumuz",
+                                      "d":  "Amhara",
+                                      "v":  94768
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "South Ethiopia",
+                                      "v":  2012
+                                  },
+                                  {
+                                      "o":  "Somali",
+                                      "d":  "Amhara",
+                                      "v":  58
+                                  },
+                                  {
+                                      "o":  "Somali",
+                                      "d":  "Harari",
+                                      "v":  2572
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "Somali",
+                                      "v":  375732
+                                  },
+                                  {
+                                      "o":  "Somali",
+                                      "d":  "Somali",
+                                      "v":  535236
+                                  },
+                                  {
+                                      "o":  "Amhara",
+                                      "d":  "Amhara",
+                                      "v":  150805
+                                  },
+                                  {
+                                      "o":  "Afar",
+                                      "d":  "Amhara",
+                                      "v":  1780
+                                  },
+                                  {
+                                      "o":  "Afar",
+                                      "d":  "Afar",
+                                      "v":  61423
+                                  },
+                                  {
+                                      "o":  "Somali",
+                                      "d":  "Central Ethiopia",
+                                      "v":  4715
+                                  },
+                                  {
+                                      "o":  "Central Ethiopia",
+                                      "d":  "Central Ethiopia",
+                                      "v":  2054
+                                  },
+                                  {
+                                      "o":  "South West Ethiopia",
+                                      "d":  "Amhara",
+                                      "v":  2706
+                                  },
+                                  {
+                                      "o":  "South West Ethiopia",
+                                      "d":  "Sidama",
+                                      "v":  5345
+                                  },
+                                  {
+                                      "o":  "Somali",
+                                      "d":  "Oromia",
+                                      "v":  198583
+                                  },
+                                  {
+                                      "o":  "Tigray",
+                                      "d":  "Amhara",
+                                      "v":  49645
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "Dire Dawa",
+                                      "v":  570
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "Oromia",
+                                      "v":  598842
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "Harari",
+                                      "v":  235
+                                  },
+                                  {
+                                      "o":  "Benishangul-Gumuz",
+                                      "d":  "Benishangul-Gumuz",
+                                      "v":  108369
+                                  },
+                                  {
+                                      "o":  "Harari",
+                                      "d":  "Harari",
+                                      "v":  326
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "Benishangul-Gumuz",
+                                      "v":  17068
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "Sidama",
+                                      "v":  1402
+                                  },
+                                  {
+                                      "o":  "Afar",
+                                      "d":  "South Ethiopia",
+                                      "v":  2453
+                                  },
+                                  {
+                                      "o":  "Benishangul-Gumuz",
+                                      "d":  "Oromia",
+                                      "v":  9462
+                                  },
+                                  {
+                                      "o":  "Afar",
+                                      "d":  "Sidama",
+                                      "v":  41570
+                                  },
+                                  {
+                                      "o":  "Gambela",
+                                      "d":  "Gambela",
+                                      "v":  28451
+                                  },
+                                  {
+                                      "o":  "Afar",
+                                      "d":  "Oromia",
+                                      "v":  100
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "Amhara",
+                                      "v":  211803
+                                  },
+                                  {
+                                      "o":  "South West Ethiopia",
+                                      "d":  "South West Ethiopia",
+                                      "v":  18703
+                                  },
+                                  {
+                                      "o":  "South West Ethiopia",
+                                      "d":  "Central Ethiopia",
+                                      "v":  22710
+                                  },
+                                  {
+                                      "o":  "Oromia",
+                                      "d":  "Central Ethiopia",
+                                      "v":  10059
+                                  }
+                              ]
+                 }
+}

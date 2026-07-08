@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ethiopia IDP Origin–Destination Matrices, 2020–2024 — IOM DTM</title>
+<style>
+  :root{
+    --surface-1:#fcfcfb; --page:#f9f9f7;
+    --text-primary:#0b0b0b; --text-secondary:#52514e; --muted:#898781;
+    --grid:#e1e0d9; --baseline:#c3c2b7; --border:rgba(11,11,11,0.10);
+    /* sequential blue ramp 100->700 (validated default) */
+    --s100:#cde2fb; --s200:#9ec5f4; --s300:#6da7ec; --s400:#3987e5;
+    --s500:#256abf; --s600:#184f95; --s700:#0d366b;
+    --diag:#eb6834;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --surface-1:#1a1a19; --page:#0d0d0d;
+      --text-primary:#fff; --text-secondary:#c3c2b7; --muted:#898781;
+      --grid:#2c2c2a; --baseline:#383835; --border:rgba(255,255,255,0.10);
+      --s100:#0d366b; --s200:#184f95; --s300:#256abf; --s400:#3987e5;
+      --s500:#6da7ec; --s600:#9ec5f4; --s700:#cde2fb;
+      --diag:#d95926;
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--page);color:var(--text-primary);
+    font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5;}
+  .wrap{max-width:1100px;margin:0 auto;padding:28px 22px 60px;}
+  h1{font-size:22px;margin:0 0 4px;letter-spacing:-0.01em;}
+  .sub{color:var(--text-secondary);font-size:14px;margin:0 0 2px;}
+  .src{color:var(--muted);font-size:12.5px;margin:0 0 20px;}
+  .controls{display:flex;flex-wrap:wrap;gap:14px;align-items:center;
+    background:var(--surface-1);border:1px solid var(--border);border-radius:10px;
+    padding:12px 14px;margin-bottom:8px;position:sticky;top:0;z-index:5;}
+  .controls .grp{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);}
+  .seg{display:inline-flex;border:1px solid var(--border);border-radius:8px;overflow:hidden;}
+  .seg button{border:0;background:transparent;color:var(--text-secondary);
+    font:inherit;font-size:13px;padding:6px 12px;cursor:pointer;}
+  .seg button[aria-pressed="true"]{background:var(--s400);color:#fff;}
+  .legend{display:flex;align-items:center;gap:10px;margin-left:auto;font-size:12px;color:var(--text-secondary);}
+  .legbar{width:180px;height:12px;border-radius:3px;border:1px solid var(--border);}
+  figure{margin:26px 0 0;background:var(--surface-1);border:1px solid var(--border);
+    border-radius:12px;padding:16px 16px 8px;}
+  figcaption{font-size:15px;font-weight:600;margin:0 0 2px;}
+  .capnote{font-size:12.5px;color:var(--muted);margin:0 0 8px;}
+  .capnote b{color:var(--text-secondary);font-weight:600;}
+  svg{width:100%;height:auto;display:block;}
+  text{font-family:inherit;}
+  .axlab{fill:var(--muted);font-size:11px;}
+  .axlab.diag{fill:var(--diag);}
+  .celltext{font-size:9.5px;font-variant-numeric:tabular-nums;pointer-events:none;}
+  .axtitle{fill:var(--text-secondary);font-size:11.5px;font-weight:600;}
+  .cell{stroke:var(--surface-1);stroke-width:2;cursor:default;}
+  .cell.empty{fill:none;stroke:var(--grid);stroke-width:1;}
+  .cell.diagring{stroke:var(--diag);stroke-width:1.5;}
+  .tip{position:fixed;pointer-events:none;z-index:20;background:var(--text-primary);
+    color:var(--surface-1);font-size:12px;padding:7px 9px;border-radius:7px;
+    box-shadow:0 4px 14px rgba(0,0,0,.28);opacity:0;transition:opacity .08s;max-width:240px;}
+  .tip b{font-size:13px;}
+  .foot{color:var(--muted);font-size:12px;margin-top:26px;border-top:1px solid var(--border);padding-top:12px;}
+  a{color:var(--s400);}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Ethiopia — Internal displacement origin → destination matrices</h1>
+  <p class="sub">Where displaced people came from (rows) vs. the region hosting them (columns), by year. Cell colour = number of IDPs.</p>
+  <p class="src">Source: IOM Displacement Tracking Matrix API v3 · “Countrywide monitoring” · Admin 1 level · year-end snapshot (latest reporting round each year). Values are stock (present IDP individuals), not cumulative flows.</p>
+
+  <div class="controls">
+    <div class="grp">Colour scale
+      <span class="seg" id="scaleSeg">
+        <button data-scale="log" aria-pressed="true">Log</button>
+        <button data-scale="linear" aria-pressed="false">Linear</button>
+      </span>
+    </div>
+    <div class="grp">Comparison
+      <span class="seg" id="normSeg">
+        <button data-norm="shared" aria-pressed="true">Shared (across years)</button>
+        <button data-norm="year" aria-pressed="false">Per-year</button>
+      </span>
+    </div>
+    <div class="legend">
+      <span>fewer</span>
+      <span class="legbar" id="legbar"></span>
+      <span id="legmax">more IDPs</span>
+    </div>
+  </div>
+  <p class="capnote" style="margin-left:2px">
+    <b style="color:var(--diag)">Orange-ringed diagonal</b> = people displaced <b>within their own region</b>. Empty cells = no reported displacement on that route.
+  </p>
+
+  <div id="charts"></div>
+
+  <p class="foot">
+    Origin is reported at Admin 1; a small share of IDPs have origin “Not available” and are excluded from the matrix
+    (2020: 107,769 · 2021: 177,444 · 2022: 167,650 · 2023: 848 · 2024: 13,181).
+    Region set follows current Ethiopian Admin 1 boundaries; “Contested” denotes areas of contested administration.
+    Generated <span id="gen"></span> from <code>data/eth_od_matrices.json</code>.
+  </p>
+</div>
+
+<div class="tip" id="tip"></div>
+<script src="data/eth_data.js"></script>
+<script>
+(function(){
+  const D = window.DTM_DATA;
+  document.getElementById('gen').textContent = D.meta.generated;
+  const RAMP = ['--s100','--s200','--s300','--s400','--s500','--s600','--s700']
+      .map(v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim());
+  const cssv = n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+
+  // axes: full union region set for both, for cross-year comparability
+  const regions = D.regions.slice();
+  const nO = regions.length, nD = regions.length;
+
+  // lookup per year
+  const byYear = {};
+  let globalMax = 0;
+  const yearMax = {};
+  D.meta.years.forEach(y=>{
+    const m={}; let mx=0;
+    (D.matrices[String(y)]||[]).forEach(r=>{ m[r.o+'|'+r.d]=r.v; if(r.v>mx)mx=r.v; });
+    byYear[y]=m; yearMax[y]=mx; if(mx>globalMax)globalMax=mx;
+  });
+
+  function hexToRgb(h){h=h.replace('#','');return[parseInt(h.slice(0,2),16),parseInt(h.slice(2,4),16),parseInt(h.slice(4,6),16)];}
+  function lerp(a,b,t){return Math.round(a+(b-a)*t);}
+  function rampColor(t){ // t in [0,1] across RAMP stops
+    t=Math.max(0,Math.min(1,t));
+    const seg=(RAMP.length-1)*t, i=Math.floor(seg), f=seg-i;
+    if(i>=RAMP.length-1) return RAMP[RAMP.length-1];
+    const a=hexToRgb(RAMP[i]), b=hexToRgb(RAMP[i+1]);
+    return `rgb(${lerp(a[0],b[0],f)},${lerp(a[1],b[1],f)},${lerp(a[2],b[2],f)})`;
+  }
+  function norm(v,mx,scale){ if(v<=0||mx<=0)return 0;
+    return scale==='log' ? Math.log(v+1)/Math.log(mx+1) : v/mx; }
+  function fmt(v){ if(v>=1e6)return (v/1e6).toFixed(1)+'M'; if(v>=1e3)return Math.round(v/1e3)+'k'; return String(v);}
+  function fmtFull(v){return v.toLocaleString('en-US');}
+
+  let SCALE='log', NORM='shared';
+  const tip=document.getElementById('tip');
+  function showTip(html,x,y){tip.innerHTML=html;tip.style.opacity=1;
+    tip.style.left=Math.min(x+14,innerWidth-250)+'px';tip.style.top=(y+14)+'px';}
+  function hideTip(){tip.style.opacity=0;}
+
+  const CELL=32, GAP=0, LM=150, TM=132, RM=64, BM=58; // right/bottom for totals
+  const W=LM+nD*CELL+RM, H=TM+nO*CELL+BM;
+
+  function draw(){
+    const host=document.getElementById('charts'); host.innerHTML='';
+    D.meta.years.forEach(y=>{
+      const m=byYear[y];
+      const mx = NORM==='shared'?globalMax:yearMax[y];
+      const meta=D.yearMeta.find(z=>z.year===y);
+      const fig=document.createElement('figure');
+      const cap=document.createElement('figcaption'); cap.textContent=y+' — Ethiopia IDPs by origin → host region';
+      const note=document.createElement('p'); note.className='capnote';
+      note.innerHTML=`Snapshot ${meta.snapshotDate} (round ${meta.round}) · <b>${fmtFull(meta.totalIdp)}</b> IDPs at <b>${meta.sites}</b> sites`;
+      fig.appendChild(cap); fig.appendChild(note);
+
+      const NS='http://www.w3.org/2000/svg';
+      const svg=document.createElementNS(NS,'svg');
+      svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
+      svg.setAttribute('role','img');
+      svg.setAttribute('aria-label',`Origin-destination heat map for ${y}`);
+
+      // axis titles
+      const at1=document.createElementNS(NS,'text');
+      at1.setAttribute('x',LM+nD*CELL/2);at1.setAttribute('y',16);at1.setAttribute('text-anchor','middle');
+      at1.setAttribute('class','axtitle');at1.textContent='HOST / CURRENT REGION (destination)';svg.appendChild(at1);
+      const at2=document.createElementNS(NS,'text');
+      at2.setAttribute('transform',`translate(14,${TM+nO*CELL/2}) rotate(-90)`);
+      at2.setAttribute('text-anchor','middle');at2.setAttribute('class','axtitle');
+      at2.textContent='ORIGIN OF DISPLACEMENT';svg.appendChild(at2);
+
+      // column (destination) labels — rotated
+      regions.forEach((d,j)=>{
+        const t=document.createElementNS(NS,'text');
+        const cx=LM+j*CELL+CELL/2;
+        t.setAttribute('transform',`translate(${cx},${TM-8}) rotate(-45)`);
+        t.setAttribute('text-anchor','start');t.setAttribute('class','axlab');
+        t.textContent=d;svg.appendChild(t);
+      });
+      // row (origin) labels
+      regions.forEach((o,i)=>{
+        const t=document.createElementNS(NS,'text');
+        t.setAttribute('x',LM-8);t.setAttribute('y',TM+i*CELL+CELL/2+3);
+        t.setAttribute('text-anchor','end');t.setAttribute('class','axlab');
+        t.textContent=o;svg.appendChild(t);
+      });
+
+      // totals
+      let colTot=new Array(nD).fill(0), rowTot=new Array(nO).fill(0);
+
+      // cells
+      regions.forEach((o,i)=>{
+        regions.forEach((d,j)=>{
+          const v=m[o+'|'+d]||0;
+          rowTot[i]+=v; colTot[j]+=v;
+          const x=LM+j*CELL, yy=TM+i*CELL;
+          const rect=document.createElementNS(NS,'rect');
+          rect.setAttribute('x',x);rect.setAttribute('y',yy);
+          rect.setAttribute('width',CELL);rect.setAttribute('height',CELL);
+          if(v<=0){ rect.setAttribute('class','cell empty'); svg.appendChild(rect); }
+          else{
+            const t=norm(v,mx,SCALE);
+            rect.setAttribute('class','cell'+(o===d?' diagring':''));
+            rect.setAttribute('fill',rampColor(t));
+            rect.addEventListener('mousemove',e=>showTip(
+              `<b>${fmtFull(v)}</b> IDPs<br>${o} → ${d}${o===d?' (within region)':''}<br><span style="opacity:.7">${y}</span>`,
+              e.clientX,e.clientY));
+            rect.addEventListener('mouseleave',hideTip);
+            svg.appendChild(rect);
+            // selective direct label on strong cells (drawn on top of the cell)
+            if(t>=0.45){
+              const tx=document.createElementNS(NS,'text');
+              tx.setAttribute('x',x+CELL/2);tx.setAttribute('y',yy+CELL/2+3);
+              tx.setAttribute('text-anchor','middle');tx.setAttribute('class','celltext');
+              tx.setAttribute('fill', t>0.62?'#fff':cssv('--text-primary'));
+              tx.textContent=fmt(v);svg.appendChild(tx);
+            }
+          }
+        });
+      });
+
+      // marginal totals (muted text)
+      regions.forEach((o,i)=>{
+        const t=document.createElementNS(NS,'text');
+        t.setAttribute('x',LM+nD*CELL+8);t.setAttribute('y',TM+i*CELL+CELL/2+3);
+        t.setAttribute('class','celltext');t.setAttribute('fill',cssv('--muted'));
+        t.textContent=rowTot[i]?fmt(rowTot[i]):'';svg.appendChild(t);
+      });
+      const rtl=document.createElementNS(NS,'text');
+      rtl.setAttribute('x',LM+nD*CELL+8);rtl.setAttribute('y',TM-8);
+      rtl.setAttribute('class','axlab');rtl.textContent='Σ out';svg.appendChild(rtl);
+      regions.forEach((d,j)=>{
+        const t=document.createElementNS(NS,'text');
+        t.setAttribute('x',LM+j*CELL+CELL/2);t.setAttribute('y',TM+nO*CELL+16);
+        t.setAttribute('text-anchor','middle');t.setAttribute('class','celltext');
+        t.setAttribute('fill',cssv('--muted'));
+        t.textContent=colTot[j]?fmt(colTot[j]):'';svg.appendChild(t);
+      });
+      const ctl=document.createElementNS(NS,'text');
+      ctl.setAttribute('x',LM-8);ctl.setAttribute('y',TM+nO*CELL+16);
+      ctl.setAttribute('text-anchor','end');ctl.setAttribute('class','axlab');
+      ctl.textContent='Σ in';svg.appendChild(ctl);
+
+      fig.appendChild(svg); host.appendChild(fig);
+    });
+    // legend gradient
+    const stops=RAMP.map((c,i)=>`${c} ${Math.round(i/(RAMP.length-1)*100)}%`).join(',');
+    document.getElementById('legbar').style.background=`linear-gradient(90deg,${stops})`;
+    document.getElementById('legmax').textContent =
+      (NORM==='shared'? `up to ${fmtFull(globalMax)}` : 'more (per-year max)');
+  }
+
+  document.getElementById('scaleSeg').addEventListener('click',e=>{
+    const b=e.target.closest('button'); if(!b)return;
+    SCALE=b.dataset.scale;
+    [...e.currentTarget.children].forEach(x=>x.setAttribute('aria-pressed',x===b));
+    draw();
+  });
+  document.getElementById('normSeg').addEventListener('click',e=>{
+    const b=e.target.closest('button'); if(!b)return;
+    NORM=b.dataset.norm;
+    [...e.currentTarget.children].forEach(x=>x.setAttribute('aria-pressed',x===b));
+    draw();
+  });
+  draw();
+})();
+</script>
+</body>
+</html>

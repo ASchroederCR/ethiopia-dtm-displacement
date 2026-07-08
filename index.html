@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ethiopia internal displacement (IOM DTM) — visualisations</title>
+<meta name="description" content="Origin–destination analysis of internal displacement in Ethiopia, 2020–2024, from the IOM Displacement Tracking Matrix API.">
+<style>
+  :root{
+    --surface:#fcfcfb; --page:#f4f4f1; --ink:#0b0b0b; --sec:#52514e; --muted:#898781;
+    --border:rgba(11,11,11,.12); --accent:#256abf; --node:#eb6834;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{--surface:#1a1a19;--page:#0d0d0d;--ink:#fff;--sec:#c3c2b7;--muted:#898781;
+      --border:rgba(255,255,255,.14);--accent:#6da7ec;--node:#d95926;}
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--page);color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55;}
+  .wrap{max-width:900px;margin:0 auto;padding:48px 22px 70px;}
+  .kicker{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 6px;}
+  h1{font-size:30px;line-height:1.15;letter-spacing:-.02em;margin:0 0 10px;}
+  .lede{font-size:16px;color:var(--sec);margin:0 0 8px;max-width:660px;}
+  .src{font-size:13px;color:var(--muted);margin:0 0 34px;}
+  .cards{display:grid;grid-template-columns:1fr;gap:16px;}
+  @media(min-width:680px){.cards{grid-template-columns:1fr 1fr;}}
+  .card{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--border);
+    border-radius:14px;padding:20px 20px 18px;text-decoration:none;color:inherit;transition:border-color .12s,transform .12s;}
+  .card:hover{border-color:var(--accent);transform:translateY(-2px);}
+  .card.hero{grid-column:1/-1;border-color:color-mix(in srgb,var(--accent) 45%,var(--border));}
+  .tag{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--accent);margin:0 0 6px;}
+  .card h2{font-size:19px;margin:0 0 6px;letter-spacing:-.01em;}
+  .card.hero h2{font-size:23px;}
+  .card p{font-size:14px;color:var(--sec);margin:0 0 14px;}
+  .go{margin-top:auto;font-size:14px;font-weight:600;color:var(--accent);}
+  .foot{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-size:13px;color:var(--muted);}
+  .foot a{color:var(--accent);}
+  code{font-size:12.5px;background:color-mix(in srgb,var(--ink) 7%,transparent);padding:1px 5px;border-radius:5px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="kicker">IOM Displacement Tracking Matrix · Ethiopia · 2020–2024</p>
+  <h1>Ethiopia internal displacement — origin&nbsp;→&nbsp;destination</h1>
+  <p class="lede">Where internally displaced people (IDPs) in Ethiopia came from and where
+    they are now hosted, built from the IOM DTM API. Figures are year-end snapshots of
+    displacement stock at Admin&nbsp;1 (region) and Admin&nbsp;2 (zone) level.</p>
+  <p class="src">Source: IOM DTM API v3 · “Countrywide monitoring” · zone centroids from OCHA COD-AB.</p>
+
+  <div class="cards">
+    <a class="card hero" href="eth_flow_map_sites.html">
+      <p class="tag">● Live flow map — site level</p>
+      <h2>Displacement flows to sites (Admin&nbsp;2)</h2>
+      <p>Interactive map: arrows from region of origin to the specific host zone, sized by
+        number of IDPs. Filter by origin region, step through years, and adjust the minimum
+        flow shown. The most detailed view.</p>
+      <span class="go">Open the live map →</span>
+    </a>
+
+    <a class="card" href="eth_flow_map.html">
+      <p class="tag">Flow map — region level</p>
+      <h2>Region-to-region flows (Admin&nbsp;1)</h2>
+      <p>The same displacement flows summarised to 15 regions — a cleaner overview of the
+        national picture, year by year.</p>
+      <span class="go">Open →</span>
+    </a>
+
+    <a class="card" href="eth_od_heatmaps.html">
+      <p class="tag">Heat maps</p>
+      <h2>Origin × destination matrices</h2>
+      <p>One heat-map matrix per year (2020–2024): origins as rows, host regions as columns,
+        colour by IDP count, with log/linear and shared/per-year scaling.</p>
+      <span class="go">Open →</span>
+    </a>
+  </div>
+
+  <p class="foot">
+    Code &amp; methodology in the repository <code>README.md</code>. Displacement figures are
+    <em>stock</em> (present IDP individuals), not measured movement flows; origin is reported
+    at Admin&nbsp;1 only. Data © IOM DTM; boundaries © OCHA COD-AB / © OpenStreetMap contributors.
+  </p>
+</div>
+</body>
+</html>
