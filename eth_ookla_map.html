@@ -160,7 +160,7 @@ function fmt(n){ return n>=100 ? Math.round(n).toLocaleString() : (Math.round(n*
 function drawTiles(){
   tileLayer.clearLayers();
   const met = state.met, fi = FIELD[met], rows = DATA[state.net];
-  const r = map.getZoom() >= 9 ? 4.2 : (map.getZoom() >= 7 ? 3.2 : 2.4);
+  const r = map.getZoom() >= 9 ? 5 : (map.getZoom() >= 7 ? 4 : 3);
   let shown=0;
   for(const t of rows){
     if(t[5] < state.minTests) continue;
