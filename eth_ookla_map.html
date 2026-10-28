@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ethiopia — mobile &amp; fixed network coverage and speed — Ookla Speedtest Open Data</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<style>
+  :root{
+    --surface-1:#fcfcfb; --page:#f9f9f7; --panel:rgba(252,252,251,.94);
+    --text-primary:#0b0b0b; --text-secondary:#52514e; --muted:#898781;
+    --border:rgba(11,11,11,0.12);
+    --accent:#256abf; --accent-strong:#0d366b; --casing:#fcfcfb; --region:#52514e;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --surface-1:#1a1a19; --page:#0d0d0d; --panel:rgba(26,26,25,.92);
+      --text-primary:#f0efec; --text-secondary:#c3c2b7; --muted:#898781;
+      --border:rgba(255,255,255,0.14);
+      --accent:#6da7ec; --accent-strong:#cde2fb; --casing:#1a1a19; --region:#c3c2b7;
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;}
+  body{background:var(--page);color:var(--text-primary);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;}
+  #map{position:absolute;inset:0;background:var(--page);}
+  .leaflet-container{background:var(--page);}
+  .panel{position:absolute;top:14px;left:14px;z-index:1000;width:300px;
+    background:var(--panel);backdrop-filter:blur(6px);border:1px solid var(--border);
+    border-radius:12px;padding:14px 15px;box-shadow:0 6px 22px rgba(0,0,0,.16);
+    max-height:calc(100% - 28px);overflow-y:auto;}
+  .panel h1{font-size:15px;margin:0 0 3px;letter-spacing:-0.01em;}
+  .panel p.sub{font-size:12px;color:var(--text-secondary);margin:0 0 10px;line-height:1.45;}
+  .lab{font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin:13px 0 5px;}
+  .seg{display:flex;gap:5px;}
+  .seg button{flex:1;border:1px solid var(--border);background:transparent;
+    color:var(--text-secondary);font:inherit;font-size:12.5px;
+    padding:6px 0;border-radius:8px;cursor:pointer;transition:background .1s;}
+  .seg button[aria-pressed="true"]{background:var(--accent);color:#fff;border-color:transparent;}
+  .stat{font-size:12.5px;color:var(--text-secondary);margin:11px 0 0;line-height:1.55;}
+  .stat b{color:var(--text-primary);font-variant-numeric:tabular-nums;}
+  .stat .big{font-size:21px;font-weight:650;color:var(--text-primary);}
+  .row{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--text-secondary);}
+  input[type=range]{width:100%;accent-color:var(--accent);}
+  .toggle{display:flex;align-items:center;gap:7px;font-size:12.5px;color:var(--text-secondary);margin-top:12px;cursor:pointer;}
+  .toggle input{accent-color:var(--accent);}
+  .legend{position:absolute;bottom:16px;left:14px;z-index:1000;background:var(--panel);
+    backdrop-filter:blur(6px);border:1px solid var(--border);border-radius:10px;
+    padding:11px 13px;font-size:12px;color:var(--text-secondary);max-width:250px;}
+  .legend .ltitle{color:var(--text-primary);font-weight:600;margin:0 0 7px;font-size:12.5px;}
+  .legend .lrow{display:flex;align-items:center;gap:9px;margin:4px 0;}
+  .legend .sw{width:16px;height:12px;border-radius:3px;flex:0 0 auto;
+    box-shadow:0 0 0 1px var(--border) inset;}
+  .legend .note{color:var(--muted);margin-top:8px;font-size:11px;line-height:1.4;}
+  .credit{position:absolute;bottom:4px;right:6px;z-index:1000;font-size:10.5px;color:var(--muted);
+    background:var(--panel);padding:2px 6px;border-radius:5px;}
+  .credit a{color:var(--text-secondary);}
+  .tip{font-size:12px;line-height:1.5;}
+  .tip b{font-size:13px;color:var(--text-primary);}
+  .leaflet-tooltip.oot{background:var(--surface-1);color:var(--text-secondary);
+    border:1px solid var(--border);border-radius:8px;box-shadow:0 4px 14px rgba(0,0,0,.22);
+    padding:7px 9px;}
+  .leaflet-tooltip.oot:before{display:none;}
+  .reglab{color:var(--region);font-size:10.5px;font-weight:700;text-transform:uppercase;
+    letter-spacing:.02em;text-shadow:0 0 3px var(--casing),0 0 3px var(--casing),0 0 3px var(--casing);
+    pointer-events:none;background:transparent;border:none;box-shadow:none;}
+</style>
+</head>
+<body>
+<div id="map"></div>
+
+<div class="panel">
+  <h1>Ethiopia — network coverage &amp; speed</h1>
+  <p class="sub">Each dot is a <b>~610&nbsp;m tile</b> where Speedtest users ran tests in <b id="qtr">2026 Q3</b>. Colour shows the selected metric; dots mark where measured coverage exists.</p>
+
+  <div class="lab">Network</div>
+  <div class="seg" id="netseg">
+    <button data-net="mobile" aria-pressed="true">Mobile</button>
+    <button data-net="fixed">Fixed broadband</button>
+  </div>
+
+  <div class="lab">Metric</div>
+  <div class="seg" id="metseg">
+    <button data-met="d" aria-pressed="true">Download</button>
+    <button data-met="u">Upload</button>
+    <button data-met="lat">Latency</button>
+  </div>
+
+  <div class="stat" id="stat"></div>
+
+  <div class="lab">Minimum tests per tile</div>
+  <div class="row">
+    <input type="range" id="mintests" min="1" max="50" step="1" value="1">
+    <span id="mintestsval" style="min-width:60px;text-align:right;font-variant-numeric:tabular-nums;">≥ 1</span>
+  </div>
+
+  <label class="toggle"><input type="checkbox" id="regtoggle" checked> Show regions &amp; averages</label>
+  <div class="stat" id="regstat" style="min-height:1px;"></div>
+</div>
+
+<div class="legend" id="legend"></div>
+<div class="credit">Data: <a href="https://github.com/teamookla/ookla-open-data" target="_blank" rel="noopener">Ookla&reg; Speedtest Open Data</a> · boundaries geoBoundaries · basemap &copy; Esri</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="data/eth_ookla_data.js"></script>
+<script src="data/eth_adm1.js"></script>
+<script>
+const DATA = window.OOKLA, ADM1 = window.ETH_ADM1;
+const dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+document.getElementById("qtr").textContent = DATA.meta.quarter.split(" (")[0];
+
+// --- sequential blue ramp (low -> high), reversed on dark so high values pop off the dark basemap ---
+const RAMP = ['#cde2fb','#9ec5f4','#6da7ec','#3987e5','#256abf','#0d366b'];
+const COLORS = dark ? RAMP.slice().reverse() : RAMP;
+
+// metric definitions: breakpoints give 6 classes; unit; whether higher is better
+const METRICS = {
+  d:   {label:"Download speed", unit:"Mbps", breaks:[5,10,25,50,100],  better:"high"},
+  u:   {label:"Upload speed",   unit:"Mbps", breaks:[2,5,10,25,50],    better:"high"},
+  lat: {label:"Latency",        unit:"ms",   breaks:[20,40,60,100,200], better:"low"},
+};
+const FIELD = {d:2, u:3, lat:4, tests:5}; // index into tile array [lat,lon,d,u,lat_ms,tests]
+
+function classIdx(val, breaks){
+  for(let i=0;i<breaks.length;i++) if(val < breaks[i]) return i;
+  return breaks.length; // last class
+}
+function colorFor(val, met){ return COLORS[classIdx(val, METRICS[met].breaks)]; }
+
+function binLabels(met){
+  const b = METRICS[met].breaks, u = METRICS[met].unit, out=[];
+  out.push(`< ${b[0]} ${u}`);
+  for(let i=0;i<b.length-1;i++) out.push(`${b[i]}–${b[i+1]} ${u}`);
+  out.push(`${b[b.length-1]}+ ${u}`);
+  return out;
+}
+
+// --- map ---
+const map = L.map("map",{zoomControl:true, preferCanvas:true, minZoom:5, maxZoom:13})
+  .setView([9.2, 40.0], 6);
+L.control.scale({imperial:false}).addTo(map);
+const esri = "https://server.arcgisonline.com/ArcGIS/rest/services";
+const baseName = dark ? "Canvas/World_Dark_Gray_Base" : "Canvas/World_Light_Gray_Base";
+const refName  = dark ? "Canvas/World_Dark_Gray_Reference" : "Canvas/World_Light_Gray_Reference";
+L.tileLayer(`${esri}/${baseName}/MapServer/tile/{z}/{y}/{x}`,{maxZoom:16,
+  attribution:'Tiles &copy; Esri'}).addTo(map);
+L.tileLayer(`${esri}/${refName}/MapServer/tile/{z}/{y}/{x}`,{maxZoom:16, opacity:0.8}).addTo(map);
+
+const canvas = L.canvas({padding:0.5});
+let tileLayer = L.layerGroup().addTo(map);
+const regionLayer = L.layerGroup();
+const labelLayer = L.layerGroup();
+
+let state = {net:"mobile", met:"d", minTests:1, regions:true};
+
+function fmt(n){ return n>=100 ? Math.round(n).toLocaleString() : (Math.round(n*10)/10).toLocaleString(); }
+
+function drawTiles(){
+  tileLayer.clearLayers();
+  const met = state.met, fi = FIELD[met], rows = DATA[state.net];
+  const r = map.getZoom() >= 9 ? 4.2 : (map.getZoom() >= 7 ? 3.2 : 2.4);
+  let shown=0;
+  for(const t of rows){
+    if(t[5] < state.minTests) continue;
+    shown++;
+    const val = t[fi];
+    L.circleMarker([t[0],t[1]], {renderer:canvas, radius:r, stroke:false,
+      fillColor:colorFor(val,met), fillOpacity:0.82})
+     .addTo(tileLayer)
+     .bindTooltip(
+        `<div class="tip"><b>${fmt(t[2])} Mbps</b> down · ${fmt(t[3])} Mbps up<br>`+
+        `Latency ${Math.round(t[4])} ms · ${t[5].toLocaleString()} test${t[5]===1?"":"s"}</div>`,
+        {className:"oot", direction:"top", sticky:true, opacity:1});
+  }
+  return shown;
+}
+
+// region weighted stats for current net+metric already precomputed in DATA.regions
+function regionCentroid(coords){ // rough centroid of largest ring
+  let best=null, bestLen=0;
+  const polys = coords[0][0][0]!==undefined && typeof coords[0][0][0]==="number"
+    ? coords : coords; // handle Multi/Polygon uniformly below
+  function rings(geom){
+    // geom is Polygon coords ([ring,...]) or Multi ([poly,...])
+    if(typeof geom[0][0][0]==="number"){ return [geom[0]]; }      // Polygon -> outer ring
+    return geom.map(p=>p[0]);                                      // Multi -> outer rings
+  }
+  for(const ring of rings(coords)){
+    if(ring.length>bestLen){ bestLen=ring.length; best=ring; }
+  }
+  let x=0,y=0; for(const c of best){ x+=c[0]; y+=c[1]; }
+  return [y/best.length, x/best.length];
+}
+
+function drawRegions(){
+  regionLayer.clearLayers(); labelLayer.clearLayers();
+  if(!state.regions) return;
+  const met = state.met;
+  L.geoJSON(ADM1, {
+    style:{color:getComputedStyle(document.body).getPropertyValue('--region').trim()||"#666",
+           weight:1.1, opacity:0.55, fill:true, fillOpacity:0.0},
+    onEachFeature:(f,layer)=>{
+      const name=f.properties.region, rs=DATA.regions[name];
+      const m = rs && rs[state.net];
+      let html = `<div class="tip"><b>${name}</b><br>`;
+      if(m){
+        html += `${fmt(m.d)} Mbps down · ${fmt(m.u)} up<br>Latency ${m.lat} ms`+
+                `<br>${m.tiles.toLocaleString()} tiles · ${m.tests.toLocaleString()} tests</div>`;
+      } else { html += `No ${state.net} tests</div>`; }
+      layer.bindTooltip(html,{className:"oot",sticky:true,opacity:1});
+      layer.on("mouseover",()=>layer.setStyle({weight:2.2,opacity:0.95}));
+      layer.on("mouseout",()=>layer.setStyle({weight:1.1,opacity:0.55}));
+    }
+  }).addTo(regionLayer);
+  // labels
+  for(const f of ADM1.features){
+    try{
+      const c = regionCentroid(f.geometry.coordinates);
+      L.marker(c,{icon:L.divIcon({className:"reglab",html:f.properties.region,iconSize:[0,0]})})
+       .addTo(labelLayer);
+    }catch(e){}
+  }
+  regionLayer.addTo(map); labelLayer.addTo(map);
+}
+
+function updateStat(){
+  const n = DATA.national[state.net], met = state.met, M = METRICS[met];
+  const val = met==="d"?n.d: met==="u"?n.u : n.lat;
+  const metName = M.label.toLowerCase();
+  document.getElementById("stat").innerHTML =
+    `<span class="big">${fmt(val)} ${M.unit}</span>&nbsp; nationwide ${metName}<br>`+
+    `<span style="color:var(--muted)">test-weighted mean · `+
+    `<b>${n.tiles.toLocaleString()}</b> tiles · <b>${n.tests.toLocaleString()}</b> tests · `+
+    `<b>${n.devices.toLocaleString()}</b> devices</span>`;
+}
+
+function updateLegend(){
+  const met=state.met, labels=binLabels(met), L0=document.getElementById("legend");
+  const dir = METRICS[met].better==="high" ? "Faster →" : "Higher = slower";
+  let h = `<p class="ltitle">${METRICS[met].label} (${METRICS[met].unit})</p>`;
+  for(let i=labels.length-1;i>=0;i--){
+    h += `<div class="lrow"><span class="sw" style="background:${COLORS[i]}"></span>${labels[i]}</div>`;
+  }
+  h += `<div class="note">${state.net==="mobile"?"Mobile":"Fixed broadband"} · darker/brighter dots = higher value.`+
+       (met==="lat"?" Lower latency is better.":"")+`</div>`;
+  L0.innerHTML=h;
+}
+
+function refreshTiles(){ const s=drawTiles(); return s; }
+function fullRefresh(){ drawTiles(); updateStat(); updateLegend(); drawRegions(); }
+
+// controls
+document.querySelectorAll("#netseg button").forEach(b=>b.onclick=()=>{
+  state.net=b.dataset.net;
+  document.querySelectorAll("#netseg button").forEach(x=>x.setAttribute("aria-pressed", x===b));
+  fullRefresh();
+});
+document.querySelectorAll("#metseg button").forEach(b=>b.onclick=()=>{
+  state.met=b.dataset.met;
+  document.querySelectorAll("#metseg button").forEach(x=>x.setAttribute("aria-pressed", x===b));
+  drawTiles(); updateStat(); updateLegend(); // region tooltips read live, boundaries unchanged
+});
+document.getElementById("mintests").oninput=function(){
+  state.minTests=+this.value;
+  document.getElementById("mintestsval").textContent="≥ "+this.value;
+  drawTiles();
+};
+document.getElementById("regtoggle").onchange=function(){
+  state.regions=this.checked; drawRegions();
+};
+map.on("zoomend", drawTiles);
+
+fullRefresh();
+</script>
+</body>
+</html>

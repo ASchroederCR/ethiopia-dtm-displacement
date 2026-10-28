@@ -8,3 +8,6 @@ DTM_Primary_Key.txt
 # OS cruft
 Thumbs.db
 .DS_Store
+
+# Large raw data (market activity batches — see README_EthiopiaMarketActivity.txt)
+market-activity-raw/
